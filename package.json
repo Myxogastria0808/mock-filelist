@@ -1,7 +1,7 @@
 {
   "name": "mock-filelist",
   "version": "0.0.1",
-  "description": "This package is a mock of FileList and File type object.",
+  "description": "This package is a mock generator of FileList and File type object.",
   "scripts": {
     "dev": "tsup --watch",
     "build": "tsup",
@@ -43,8 +43,11 @@
     "mock",
     "File",
     "FileList",
-    "Node",
-    "ESModule"
+    "zod",
+    "test",
+    "typescript",
+    "ESModule",
+    "CommonJS"
   ],
   "author": "Myxogastria0808",
   "license": "MIT",
