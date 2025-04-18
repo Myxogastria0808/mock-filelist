@@ -3,7 +3,7 @@ import { defineConfig } from 'tsup';
 export default defineConfig([
   // for ESModule
   {
-    entry: ['src/mjs/index.mts'],
+    entry: ['src/ESModule/index.mts'],
     format: 'esm',
     outDir: 'dist',
     splitting: false,
@@ -12,7 +12,7 @@ export default defineConfig([
   },
   // for CommonJS
   {
-    entry: ['src/cjs/index.cts'],
+    entry: ['src/CommonJS/index.cts'],
     format: 'cjs',
     outDir: 'dist',
     splitting: false,

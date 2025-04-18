@@ -1,5 +1,5 @@
 {
     "$schema": "https://typedoc.org/schema.json",
-    "entryPoints": ["./src/mjs/index.mts", "./src/cjs/index.cts"],
+    "entryPoints": ["./src/ESModule/index.mts", "./src/CommonJS/index.cts"],
     "out": "docs"
 }

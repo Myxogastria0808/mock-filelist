@@ -51,7 +51,7 @@
   "bugs": {
     "url": "https://github.com/Myxogastria0808/mock-filelist/issues"
   },
-  "homepage": "https://github.com/Myxogastria0808/mock-filelist#readme",
+  "homepage": "https://myxogastria0808.github.io/mock-filelist/",
   "dependencies": {
     "typescript": "^5.8.3"
   },
