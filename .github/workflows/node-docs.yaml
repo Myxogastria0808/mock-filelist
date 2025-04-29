@@ -1,0 +1,36 @@
+name: node-docs
+
+on:
+  push:
+    branches: ['main']
+  workflow_dispatch:
+
+jobs:
+  deploy-docs:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      # Install Nix
+      - name: Install Nix
+        uses: cachix/install-nix-action@v31
+        with:
+          nix_path: nixpkgs=channel:nixpkgs-unstable
+      # Build Typedoc (@mock-filelist/node)
+      - name: Build Typedoc
+        run: nix develop --command bash -c "pnpm i && pnpm typedoc:node"
+      #  Build Vitest UI (@mock-filelist/node)
+      - name: Build Vitest UI (@vitest/ui)
+        id: vitest
+        continue-on-error: true
+        run: nix develop --command bash -c "pnpm i && pnpm ui:node"
+      # Build Vitest Coverage (@mock-filelist/node)
+      - name: Build Vitest Coverate (@vitest/coverage-v8)
+        continue-on-error: true  
+        run: nix develop --command bash -c "pnpm i && pnpm coverage:node"
+      # Test Result
+      - name: If Failed Test, exit 1
+        if: steps.vitest.outcome == 'failure'
+        run: exit 1
