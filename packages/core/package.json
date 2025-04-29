@@ -40,12 +40,7 @@
     "url": "git+https://github.com/Myxogastria0808/mock-filelist.git"
   },
   "keywords": [
-    "mock",
-    "File",
-    "FileList",
-    "File[]",
-    "zod",
-    "test",
+    "@mock-filelist",
     "typescript"
   ],
   "author": "Myxogastria0808",
@@ -53,7 +48,7 @@
   "bugs": {
     "url": "https://github.com/Myxogastria0808/mock-filelist/issues"
   },
-  "homepage": "https://myxogastria0808.github.io/mock-filelist/",
+  "homepage": "https://myxogastria0808.github.io/mock-filelist/core/",
   "dependencies": {
     "typescript": "catalog:"
   },

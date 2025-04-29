@@ -45,7 +45,7 @@
   "bugs": {
     "url": "https://github.com/Myxogastria0808/mock-filelist/issues"
   },
-  "homepage": "https://myxogastria0808.github.io/mock-filelist/",
+  "homepage": "https://myxogastria0808.github.io/mock-filelist/browser/",
   "dependencies": {
     "typescript": "catalog:"
   },
