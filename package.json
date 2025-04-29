@@ -1,0 +1,51 @@
+{
+  "name": "mock-filelist",
+  "version": "0.0.1",
+  "description": "This package is a mock generator of FileList and File type object.",
+  "scripts": {
+    "build": "turbo run build",
+    "typedoc": "turbo run typedoc",
+    "test": "turbo run test",
+    "ui": "turbo run ui",
+    "coverage": "turbo run coverage"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": "use pnpm please!",
+    "yarn": "use pnpm please!",
+    "pnpm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Myxogastria0808/mock-filelist.git"
+  },
+  "keywords": [
+    "mock",
+    "File",
+    "FileList",
+    "zod",
+    "test",
+    "typescript",
+    "ESModule",
+    "CommonJS"
+  ],
+  "author": "Myxogastria0808",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Myxogastria0808/mock-filelist/issues"
+  },
+  "homepage": "https://myxogastria0808.github.io/mock-filelist/",
+  "packageManager": "pnpm@9.15.1+sha512.1acb565e6193efbebda772702950469150cf12bcc764262e7587e71d19dc98a423dff9536e57ea44c49bdf790ff694e83c27be5faa23d67e0c033b583be4bfcf",
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "@vitest/coverage-v8": "^3.1.2",
+    "@vitest/ui": "^3.1.2",
+    "jsdom": "^26.1.0",
+    "tsup": "^8.4.0",
+    "turbo": "^2.5.0",
+    "typedoc": "^0.28.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.2",
+    "zod": "^3.24.3"
+  }
+}

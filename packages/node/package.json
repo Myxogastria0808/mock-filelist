@@ -1,0 +1,67 @@
+{
+  "name": "@mock-filelist/node",
+  "version": "0.0.1",
+  "description": "This package is a mock generator of FileList and File type object for CommonJS users.",
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run --typecheck",
+    "pub": "pnpm publish --access=public",
+    "unpub": "pnpm unpublish  dotenv-caster@${npm_config_v}",
+    "typedoc": "pnpm dlx typedoc",
+    "coverage": "vitest run --coverage --typecheck",
+    "ui": "vitest run --ui --typecheck"
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "COPYING"
+  ],
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./dist/index.d.ts",
+        "require": "./dist/index.js"
+      }
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Myxogastria0808/mock-filelist.git"
+  },
+  "keywords": [
+    "mock",
+    "File",
+    "FileList",
+    "File[]",
+    "zod",
+    "test",
+    "typescript",
+    "CommponJS"
+  ],
+  "author": "Myxogastria0808",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Myxogastria0808/mock-filelist/issues"
+  },
+  "homepage": "https://myxogastria0808.github.io/mock-filelist/",
+  "dependencies": {
+    "typescript": "catalog:"
+  },
+  "devDependencies": {
+    "@mock-filelist/core": "workspace:*",
+    "@types/node": "catalog:commonjs",
+    "@vitest/coverage-v8": "catalog:",
+    "@vitest/ui": "catalog:",
+    "tsup": "catalog:",
+    "typedoc": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:",
+    "zod": "catalog:"
+  }
+}
