@@ -5,10 +5,10 @@
 
 [![Test](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/core-test.yaml/badge.svg)](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/core-test.yaml)
 [![Docs](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/docs.yaml/badge.svg)](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/docs.yaml)
-[![NPM Version](https://img.shields.io/npm/v/@mock-filelist/browser.svg)](https://www.npmjs.com/package/@mock-filelist/browser)
+[![NPM Version](https://img.shields.io/npm/v/@mock-filelist/core.svg)](https://www.npmjs.com/package/@mock-filelist/core)
 ![GitHub Release](https://img.shields.io/github/v/release/Myxogastria0808/mock-filelist)
-![NPM Type Definitions](https://img.shields.io/npm/types/@mock-filelist/browser)
-[![Download NPM](https://img.shields.io/npm/dm/@mock-filelist/browser.svg?style=flat)](https://www.npmjs.com/package/@mock-filelist/browser/)
+![NPM Type Definitions](https://img.shields.io/npm/types/@mock-filelist/core)
+[![Download NPM](https://img.shields.io/npm/dm/@mock-filelist/core.svg?style=flat)](https://www.npmjs.com/package/@mock-filelist/core)
 ![GitHub License](https://img.shields.io/github/license/Myxogastria0808/mock-filelist)
 ![Vitest](https://img.shields.io/badge/-vitest-6e9f18?style=flat&logo=vitest&logoColor=ffffff)
 ![Typedoc](https://img.shields.io/badge/docs-typedoc-blue?style=flat-square&logo=typescript&logoColor=white)
