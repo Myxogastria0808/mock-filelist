@@ -5,6 +5,3 @@ export class Sample implements Hello {
     console.log('Hello from browser');
   }
 }
-
-const sample = new Sample();
-sample.hello();
