@@ -1,9 +1,9 @@
-# @mock-filelist/browser
+# @mock-filelist/core
 
 > [!WARNING]
 > This package is currently under development.
 
-[![Test](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/test.yaml/badge.svg)](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/test.yaml)
+[![Test](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/core-test.yaml/badge.svg)](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/core-test.yaml)
 [![Docs](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/docs.yaml/badge.svg)](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/docs.yaml)
 [![NPM Version](https://img.shields.io/npm/v/@mock-filelist/browser.svg)](https://www.npmjs.com/package/@mock-filelist/browser)
 ![GitHub Release](https://img.shields.io/github/v/release/Myxogastria0808/mock-filelist)
