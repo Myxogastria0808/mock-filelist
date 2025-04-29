@@ -19,3 +19,5 @@ https://zenn.dev/forcia_tech/articles/2024_hatano_vitest_workspace
 https://zenn.dev/forcia_tech/articles/2024_hatano_vitest_workspace
 
 https://vitest.dev/guide/workspace
+
+https://zenn.dev/drumath2237/articles/6e004662835d3f
