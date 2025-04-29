@@ -3,7 +3,7 @@ import { defineConfig } from 'tsup';
 export default defineConfig([
   // for CommonJS
   {
-    entry: ['src/index.cts', '!src/**/*.test.cts', '!src/test_assets/'],
+    entry: ['src/index.ts', '!src/**/*.test.ts', '!src/test_assets/'],
     format: 'cjs',
     outDir: 'dist',
     splitting: false,

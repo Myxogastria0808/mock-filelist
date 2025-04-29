@@ -7,7 +7,7 @@ export default defineConfig({
       provider: 'v8',
       enabled: true,
       reporter: ['html'],
-      include: ['src/**/*.cts'],
+      include: ['src/**/*.ts'],
     },
     // @vitest/ui
     reporters: ['default', 'html'],
