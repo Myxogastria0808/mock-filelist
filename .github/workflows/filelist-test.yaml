@@ -1,4 +1,4 @@
-name: filelist-test
+name: test/filelist
 
 on:
   push:
