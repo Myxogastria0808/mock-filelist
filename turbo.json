@@ -5,8 +5,20 @@
       "dependsOn": ["^build"],
       "outputs": []
     },
-    "typedoc": {
+    "test": {
       "dependsOn": ["build"],
+      "outputs": []
+    },
+    "ui": {
+      "dependsOn": ["build"],
+      "outputs": []
+    },
+    "coverage": {
+      "dependsOn": ["build", "test"],
+      "outputs": []
+    },
+    "typedoc": {
+      "dependsOn": ["build", "test"],
       "outputs": []
     }
   }
