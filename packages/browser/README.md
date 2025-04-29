@@ -3,13 +3,13 @@
 > [!WARNING]
 > This package is currently under development.
 
-[![Test](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/test.yaml/badge.svg)](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/test.yaml)
-[![Docs](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/docs.yaml/badge.svg)](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/docs.yaml)
+[![Test](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/test.yaml/badge.svg)](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/browser-test.yaml)
+[![Docs](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/docs.yaml/badge.svg)](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/browser-docs.yaml)
 [![NPM Version](https://img.shields.io/npm/v/@mock-filelist/browser.svg)](https://www.npmjs.com/package/@mock-filelist/browser)
 ![GitHub Release](https://img.shields.io/github/v/release/Myxogastria0808/mock-filelist)
 ![NPM Type Definitions](https://img.shields.io/npm/types/@mock-filelist/browser)
 [![Download NPM](https://img.shields.io/npm/dm/@mock-filelist/browser.svg?style=flat)](https://www.npmjs.com/package/@mock-filelist/browser/)
-![GitHub License](https://img.shields.io/github/license/Myxogastria0808/mock-filelist)
+![GitHub License](https://img.shields.io/github/license/Myxogastria0808/mock-filelist/packages/browser/)
 ![Vitest](https://img.shields.io/badge/-vitest-6e9f18?style=flat&logo=vitest&logoColor=ffffff)
 ![Typedoc](https://img.shields.io/badge/docs-typedoc-blue?style=flat-square&logo=typescript&logoColor=white)
 [![RenovateBot](https://img.shields.io/badge/RenovateBot-1A1F6C?logo=renovate&logoColor=fff)](#)
