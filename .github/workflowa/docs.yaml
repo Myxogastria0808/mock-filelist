@@ -1,43 +1,85 @@
-# name: docs
+name: docs
 
-# on:
-#   push:
-#     branches: ['main']
-#   workflow_dispatch:
+on:
+  push:
+    branches: ['main']
+  workflow_dispatch:
 
-# jobs:
-#   deploy-docs:
-#     runs-on: ubuntu-latest
-#     permissions:
-#       contents: write
-#     steps:
-#       - name: Checkout
-#         uses: actions/checkout@v4
-#       - name: Install Nix
-#         uses: cachix/install-nix-action@v31
-#         with:
-#           nix_path: nixpkgs=channel:nixpkgs-unstable
-#       - name: Build Typedoc
-#         run: nix develop --command bash -c "npm i && npm run typedoc"
-#       - name: Build Vitest UI (@vitest/ui)
-#         id: vitest
-#         continue-on-error: true
-#         run: nix develop --command bash -c "npm i && npm run ui"
-#       - name: Move Vitest UI Reposrt
-#         run: |
-#           mv ./html/ ./docs/html
-#       - name: Build Vitest Coverate (@vitest/coverage-v8)
-#         continue-on-error: true  
-#         run: nix develop --command bash -c "npm i && npm run coverage"
-#       - name: Move Vitest Coverage Reposrt
-#         continue-on-error: true
-#         run: |
-#           mv ./coverage/ ./docs/coverage
-#       - name: Deploy to GitHub Pages
-#         uses: peaceiris/actions-gh-pages@v4
-#         with:
-#           github_token: ${{ secrets.GITHUB_TOKEN }}
-#           publish_dir: ./docs
-#       - name: If Failed Test, exit 1
-#         if: steps.vitest.outcome == 'failure'
-#         run: exit 1
+jobs:
+  deploy-docs:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      # Install Nix
+      - name: Install Nix
+        uses: cachix/install-nix-action@v31
+        with:
+          nix_path: nixpkgs=channel:nixpkgs-unstable
+      # Build Typedoc
+      - name: Build Typedoc
+        run: nix develop --command bash -c "pnpm i && pnpm typedoc"
+      # Move Typedoc Reposrt
+      - name: Move Typedoc Report (@mock-filelist/browser)
+        run: |
+          mv ./packages/browser/typedoc/ ./docs/browser/
+      - name: Move Typedoc Report (@mock-filelist/core)
+        run: |
+          mv ./packages/core/typedoc/ ./docs/core/
+      - name: Move Typedoc Report (@mock-filelist/filelist)
+        run: |
+          mv ./packages/filelist/typedoc/ ./docs/filelist/
+      - name: Move Typedoc Report (@mock-filelist/node)
+        run: |
+          mv ./packages/node/typedoc/ ./docs/node/
+      #  Build Vitest UI
+      - name: Build Vitest UI (@vitest/ui)
+        id: vitest
+        continue-on-error: true
+        run: nix develop --command bash -c "pnpm i && pnpm ui"
+      # Move Vitest UI Report
+      - name: Move Vitest UI Report (@mock-filelist/browser)
+        run: |
+          mv ./packages/browser/html/ ./docs/browser/vitest/
+      - name: Move Vitest UI Report (@mock-filelist/core)
+        run: |
+          mv ./packages/core/html/ ./docs/core/vitest/
+      - name: Move Vitest UI Report (@mock-filelist/filelist)
+        run: |
+          mv ./packages/filelist/html/ ./docs/filelist/vitest/
+      - name: Move Vitest UI Report (@mock-filelist/node)
+        run: |
+          mv ./packages/node/html/ ./docs/node/vitest/
+      # Build Vitest Coverage
+      - name: Build Vitest Coverate (@vitest/coverage-v8)
+        continue-on-error: true  
+        run: nix develop --command bash -c "pnpm i && pnpm coverage"
+      # Move Vitest Coverage Report
+      - name: Move Vitest Coverage Report (@mock-filelist/browser)
+        continue-on-error: true
+        run: |
+          mv ./packages/browser/coverage/ ./docs/browser/coverage/
+      - name: Move Vitest Coverage Report (@mock-filelist/core)
+        continue-on-error: true
+        run: |
+          mv ./packages/core/coverage/ ./docs/core/coverage/
+      - name: Move Vitest Coverage Report (@mock-filelist/filelist)
+        continue-on-error: true
+        run: |
+          mv ./packages/filelist/coverage/ ./docs/filelist/coverage/
+      - name: Move Vitest Coverage Report (@mock-filelist/node)
+        continue-on-error: true
+        run: |
+          mv ./packages/node/coverage/ ./docs/node/coverage/
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+      # Test Result
+      - name: If Failed Test, exit 1
+        if: steps.vitest.outcome == 'failure'
+        run: exit 1
