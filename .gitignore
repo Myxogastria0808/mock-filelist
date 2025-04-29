@@ -6,6 +6,8 @@ node_modules
 dist
 .turbo
 typedoc
+html
+coverage
 
 # Other
 tmp.txt
