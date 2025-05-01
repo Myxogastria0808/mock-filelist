@@ -1,8 +1,5 @@
 # mock-filelist
 
-> [!WARNING]
-> This package is currently under development.
-
 [![Test](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/test.yaml/badge.svg)](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/test.yaml)
 [![Docs](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/docs.yaml/badge.svg)](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/docs.yaml)
 ![GitHub Release](https://img.shields.io/github/v/release/Myxogastria0808/mock-filelist)
