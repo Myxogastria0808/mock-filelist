@@ -42,7 +42,7 @@ This package is a mock generator of FileList and File type object for ES Modules
         </tr>
         <tr>
             <td><strong>@mock-filelist/browser</strong></td>
-            <td><span>Browser</span><span>or<span><span>Node + happy-dom</span></td>
+            <td>Browser<br/>or</br/>Node + happy-dom</td>
             <td>✅</td>
             <td>✅</td>
             <td>✅</td>
