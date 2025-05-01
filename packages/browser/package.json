@@ -52,7 +52,7 @@
   "devDependencies": {
     "@vitest/coverage-v8": "catalog:",
     "@vitest/ui": "catalog:",
-    "jsdom": "catalog:esmodules",
+    "happy-dom": "catalog:esmodules",
     "tsup": "catalog:",
     "typedoc": "catalog:",
     "typescript": "catalog:",

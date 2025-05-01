@@ -36,7 +36,7 @@ This package is a mock generator of FileList and File type object for ES Modules
         </tr>
         <tr>
             <td><strong>@mock-filelist/filelist</strong></td>
-            <td>Node + jsdom</td>
+            <td>Node + happy-dom</td>
             <td>✅</td>
             <td>✅</td>
             <td>✅</td>
