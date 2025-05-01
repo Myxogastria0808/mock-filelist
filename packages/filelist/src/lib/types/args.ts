@@ -1,4 +1,4 @@
-type FileSourceBase = {
+export type FileSourceBase = {
   mimeType: string;
   name: string;
 };
