@@ -65,7 +65,7 @@ This package is a mock generator of FileList and File type object for ES Modules
 
 https://myxogastria0808.github.io/mock-filelist/filelist/
 
-### Example (React + Vitest)
+### Example (React + Vitest **happy-dom**)
 
 https://github.com/Myxogastria0808/mock-filelist/blob/main/examples/filelist/
 
