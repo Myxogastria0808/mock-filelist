@@ -1,7 +1,11 @@
-import { Hello } from '@mock-filelist/core';
+import { LocalFileListBuilder, LocalFileBuilder } from './lib/local';
+import { RemoteFileListBuilder, RemoteFileBuilder } from './lib/remote';
+import { MergeFileListBuilder } from './lib/merge';
 
-export class Sample implements Hello {
-  hello(): void {
-    console.log('Hello from browser');
-  }
-}
+export const filelist = {
+  LocalFileListBuilder,
+  LocalFileBuilder,
+  RemoteFileListBuilder,
+  RemoteFileBuilder,
+  MergeFileListBuilder,
+};
