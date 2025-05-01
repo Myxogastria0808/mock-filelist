@@ -4,7 +4,7 @@ export default defineConfig([
   // for ESModule
   {
     entry: ['src/index.mts', '!src/**/*.test.mts'],
-    format: 'esm',
+    format: ['esm'],
     outDir: 'dist',
     splitting: false,
     sourcemap: true,
