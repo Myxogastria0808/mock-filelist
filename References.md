@@ -21,3 +21,9 @@ https://zenn.dev/forcia_tech/articles/2024_hatano_vitest_workspace
 https://vitest.dev/guide/workspace
 
 https://zenn.dev/drumath2237/articles/6e004662835d3f
+
+### examples
+
+https://qiita.com/oblivion/items/e9677ef4ca38643aaa14
+
+https://qiita.com/jkr_2255/items/1c30f7afefe6959506d2
