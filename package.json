@@ -32,7 +32,11 @@
     "browser-example:build": "pnpm -C examples/browser build",
     "browser-example:lint": "pnpm -C examples/browser lint",
     "browser-example:preview": "pnpm -C examples/browser preview",
-    "browser-example:test": "pnpm -C examples/browser test"
+    "browser-example:test": "pnpm -C examples/browser test",
+    "node-example:dev": "pnpm -C examples/node dev",
+    "node-example:build": "pnpm -C examples/node build",
+    "node-example:start": "pnpm -C examples/node start",
+    "node-example:test": "pnpm -C examples/node test"
   },
   "engines": {
     "node": ">=20.0.0",
