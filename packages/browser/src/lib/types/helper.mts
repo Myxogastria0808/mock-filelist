@@ -1,4 +1,4 @@
-import { RemoteFileSource } from './args';
+import { RemoteFileSource } from './args.mjs';
 
 /* Build Helper Function */
 export const buildFile = (file: File | undefined): File => {

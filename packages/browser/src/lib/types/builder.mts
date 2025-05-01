@@ -1,4 +1,4 @@
-import { BlobFileSource, RemoteFileSource } from './args';
+import { BlobFileSource, RemoteFileSource } from './args.mjs';
 
 export interface RemoteFileListBuilderType {
   addBlob(file: BlobFileSource): this;

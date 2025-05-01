@@ -1,5 +1,5 @@
-import { MergeFileListBuilderType } from './types/builder';
-import { buildFileList } from './types/helper';
+import { MergeFileListBuilderType } from './types/builder.mjs';
+import { buildFileList } from './types/helper.mjs';
 
 export class MergeFileListBuilder implements MergeFileListBuilderType {
   private files: File[] = [];

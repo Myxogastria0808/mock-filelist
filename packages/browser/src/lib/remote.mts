@@ -1,6 +1,6 @@
-import { BlobFileSource, RemoteFileSource } from './types/args';
-import { RemoteFileBuilderType, RemoteFileListBuilderType } from './types/builder';
-import { buildFile, buildFileList, remoteFileSourceConverter } from './types/helper';
+import { BlobFileSource, RemoteFileSource } from './types/args.mjs';
+import { RemoteFileBuilderType, RemoteFileListBuilderType } from './types/builder.mjs';
+import { buildFile, buildFileList, remoteFileSourceConverter } from './types/helper.mjs';
 
 /* Remote Class */
 export class RemoteFileListBuilder implements RemoteFileListBuilderType {
