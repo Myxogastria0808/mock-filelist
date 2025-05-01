@@ -12,7 +12,6 @@ export interface LocalFileListBuilderType {
 
 export interface LocalFileBuilderType {
   addBlob(file: BlobFileSource): this;
-  addBlobs(files: BlobFileSource[]): this;
   addFile(file: LocalFileSource): this;
   addFileObject(file: File): this;
   build(): File;
