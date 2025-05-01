@@ -16,9 +16,6 @@ jobs:
         uses: cachix/install-nix-action@v31
         with:
           nix_path: nixpkgs=channel:nixpkgs-unstable
-      # Test (@mock-filelist/core)
-      - name: Test (@mock-filelist/core)
-        run: nix develop --command bash -c "pnpm i && pnpm run test:core"
       # Test (@mock-filelist/node)
       - name: Test (@mock-filelist/node)
         run: nix develop --command bash -c "pnpm i && pnpm run test:node"
