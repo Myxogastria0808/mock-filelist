@@ -20,14 +20,12 @@ This repository has three npm packages named [@mock-filelist/filelist](https://w
 <table>
     <tbody>
         <tr>
-            <th></th>
-            <th></th>
+            <th rowspan="2"></th>
+            <th rowspan="2">Available Environment</th>
             <th colspan="3">Generatable Objects</th>
             <th colspan="2">Available Files</th>
         </tr>
         <tr>
-            <th></th>
-            <th>Available Environment</th>
             <th>File</th>
             <th>FileList</th>
             <th>File[]</th>
