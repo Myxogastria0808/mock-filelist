@@ -63,15 +63,6 @@ This repository has three npm packages named [@mock-filelist/filelist](https://w
 
 https://myxogastria0808.github.io/mock-filelist/
 
-### DeepWiki
-
-> [!WARNING]
-> The accuracy of the contents of generated deepwiki has not been verified by me.
-> 
-> I recommend that you look at a [documentation](https://myxogastria0808.github.io/mock-filelist/).
-
-https://deepwiki.com/Myxogastria0808/mock-filelist/
-
 > [!IMPORTANT]
 > Be sure to use the latest version.
 
@@ -118,3 +109,14 @@ https://myxogastria0808.github.io/mock-filelist/node/
 ### README.md
 
 https://github.com/Myxogastria0808/mock-filelist/blob/main/packages/node/README.md
+
+---
+
+## DeepWiki
+
+> [!WARNING]
+> The accuracy of the contents of generated deepwiki has not been verified by me.
+> 
+> I recommend that you look at a [documentation](https://myxogastria0808.github.io/mock-filelist/).
+
+https://deepwiki.com/Myxogastria0808/mock-filelist/
