@@ -25,9 +25,6 @@ jobs:
       - name: Move Typedoc Report (@mock-filelist/browser)
         run: |
           mv ./packages/browser/typedoc/ ./docs/browser/
-      - name: Move Typedoc Report (@mock-filelist/core)
-        run: |
-          mv ./packages/core/typedoc/ ./docs/core/
       - name: Move Typedoc Report (@mock-filelist/filelist)
         run: |
           mv ./packages/filelist/typedoc/ ./docs/filelist/
@@ -43,9 +40,6 @@ jobs:
       - name: Move Vitest UI Report (@mock-filelist/browser)
         run: |
           mv ./packages/browser/html/ ./docs/browser/vitest/
-      - name: Move Vitest UI Report (@mock-filelist/core)
-        run: |
-          mv ./packages/core/html/ ./docs/core/vitest/
       - name: Move Vitest UI Report (@mock-filelist/filelist)
         run: |
           mv ./packages/filelist/html/ ./docs/filelist/vitest/
@@ -61,10 +55,6 @@ jobs:
         continue-on-error: true
         run: |
           mv ./packages/browser/coverage/ ./docs/browser/coverage/
-      - name: Move Vitest Coverage Report (@mock-filelist/core)
-        continue-on-error: true
-        run: |
-          mv ./packages/core/coverage/ ./docs/core/coverage/
       - name: Move Vitest Coverage Report (@mock-filelist/filelist)
         continue-on-error: true
         run: |

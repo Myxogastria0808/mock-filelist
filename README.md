@@ -28,6 +28,3 @@ https://www.npmjs.com/package/@mock-filelist/browser/
 
 https://www.npmjs.com/package/@mock-filelist/node/
 
-## @mock-filelist/core
-
-https://www.npmjs.com/package/@mock-filelist/core/
