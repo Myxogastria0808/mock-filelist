@@ -25,7 +25,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/76</span>
+                <span class='fraction'>0/68</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/76</span>
+                <span class='fraction'>0/68</span>
             </div>
         
             
@@ -147,16 +147,7 @@
 <a name='L82'></a><a href='#L82'>82</a>
 <a name='L83'></a><a href='#L83'>83</a>
 <a name='L84'></a><a href='#L84'>84</a>
-<a name='L85'></a><a href='#L85'>85</a>
-<a name='L86'></a><a href='#L86'>86</a>
-<a name='L87'></a><a href='#L87'>87</a>
-<a name='L88'></a><a href='#L88'>88</a>
-<a name='L89'></a><a href='#L89'>89</a>
-<a name='L90'></a><a href='#L90'>90</a>
-<a name='L91'></a><a href='#L91'>91</a>
-<a name='L92'></a><a href='#L92'>92</a>
-<a name='L93'></a><a href='#L93'>93</a>
-<a name='L94'></a><a href='#L94'>94</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L85'></a><a href='#L85'>85</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -219,15 +210,6 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -301,7 +283,7 @@ import { RemoteFileBuilderType, RemoteFileListBuilderType } from './types/builde
 <span class="cstat-no" title="statement not covered" >    return this;</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  async build(): Promise&lt;FileList&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  build(): FileList {</span>
 <span class="cstat-no" title="statement not covered" >    return buildFileList(this.files);</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
 <span class="cstat-no" title="statement not covered" >}</span>
@@ -319,15 +301,6 @@ import { RemoteFileBuilderType, RemoteFileListBuilderType } from './types/builde
 <span class="cstat-no" title="statement not covered" >    return this;</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  addBlobs(blobs: BlobFileSource[]): this {</span>
-<span class="cstat-no" title="statement not covered" >    for (const blob of blobs) {</span>
-<span class="cstat-no" title="statement not covered" >      this.file = new File([blob.blob], blob.name, {</span>
-<span class="cstat-no" title="statement not covered" >        type: blob.mimeType,</span>
-<span class="cstat-no" title="statement not covered" >      });</span>
-<span class="cstat-no" title="statement not covered" >    }</span>
-<span class="cstat-no" title="statement not covered" >    return this;</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
-&nbsp;
 <span class="cstat-no" title="statement not covered" >  async addFile(file: RemoteFileSource): Promise&lt;this&gt; {</span>
 <span class="cstat-no" title="statement not covered" >    this.file = await remoteFileSourceConverter(file);</span>
 <span class="cstat-no" title="statement not covered" >    return this;</span>
@@ -338,7 +311,7 @@ import { RemoteFileBuilderType, RemoteFileListBuilderType } from './types/builde
 <span class="cstat-no" title="statement not covered" >    return this;</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  async build(): Promise&lt;File&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  build(): File {</span>
 <span class="cstat-no" title="statement not covered" >    return buildFile(this.file);</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
 <span class="cstat-no" title="statement not covered" >}</span>
@@ -349,7 +322,7 @@ import { RemoteFileBuilderType, RemoteFileListBuilderType } from './types/builde
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-05-01T13:49:34.029Z
+                at 2025-05-01T15:14:46.314Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
