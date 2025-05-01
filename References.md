@@ -1,29 +1,42 @@
-## References
+# References
+
+## how to create npm package
 
 https://zenn.dev/dqn/articles/npm-publishing-2023
+
+## tsup
 
 https://fe-memo.koralle-mgmg.com/typescript/tsup/
 
 https://zenn.dev/okunokentaro/articles/01jf78zf9ebjsq8ywjm4jrtk30
 
+## CommonJS / ESModules
+
 https://zenn.dev/uhyo/articles/typescript-module-option
 
 https://qiita.com/yuta-katayama-23/items/e72698698d96beb6e002
 
+## engines field of package.json
+
 https://zenn.dev/ianchen0419/articles/9c101f03f319a4
 
-https://zenn.dev/you_5805/articles/vitest-workspace
-
-https://zenn.dev/forcia_tech/articles/2024_hatano_vitest_workspace
-
-https://zenn.dev/forcia_tech/articles/2024_hatano_vitest_workspace
-
-https://vitest.dev/guide/workspace
+## lerna-lite
 
 https://zenn.dev/drumath2237/articles/6e004662835d3f
 
-### examples
+## examples
 
 https://qiita.com/oblivion/items/e9677ef4ca38643aaa14
 
 https://qiita.com/jkr_2255/items/1c30f7afefe6959506d2
+
+
+## export field of package.json
+
+https://skysan87.hatenablog.com/entry/2023/06/06/013501
+
+https://zenn.dev/makotot/articles/5edb504ef7d2e6
+
+### async / await
+
+https://zenn.dev/umibudou/articles/19237538b2cab1
