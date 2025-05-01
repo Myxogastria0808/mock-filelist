@@ -31,7 +31,7 @@ This repository has three npm packages named [@mock-filelist/filelist](https://w
         </tr>
         <tr>
             <td>@mock-filelist/filelist</td>
-            <td>`Node + happy-dom`</td>
+            <td>Node + happy-dom</td>
             <td>✅</td>
             <td>✅</td>
             <td>✅</td>
@@ -40,7 +40,7 @@ This repository has three npm packages named [@mock-filelist/filelist](https://w
         </tr>
         <tr>
             <td>@mock-filelist/browser</td>
-            <td>`Browser` or `Node + happy-dom`</td>
+            <td><span>Browser</span><span>or<span><span>Node + happy-dom</span></td>
             <td>✅</td>
             <td>✅</td>
             <td>✅</td>
@@ -49,7 +49,7 @@ This repository has three npm packages named [@mock-filelist/filelist](https://w
         </tr>
         <tr>
             <td>@mock-filelist/node</td>
-            <td>`Node`</td>
+            <td>Node</td>
             <td>✅</td>
             <td>❌</td>
             <td>✅</td>
