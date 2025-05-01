@@ -234,9 +234,9 @@ importers:
       '@eslint/js':
         specifier: catalog:examples
         version: 9.25.1
-      '@mock-filelist/filelist':
+      '@mock-filelist/browser':
         specifier: workspace:*
-        version: link:../../packages/filelist
+        version: link:../../packages/browser
       '@types/react':
         specifier: catalog:examples
         version: 19.1.2
