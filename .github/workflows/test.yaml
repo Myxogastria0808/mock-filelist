@@ -18,6 +18,12 @@ jobs:
         uses: cachix/install-nix-action@v31
         with:
           nix_path: nixpkgs=channel:nixpkgs-unstable
-      # Test
-      - name: Test
+      # Package Test
+      - name: Package Test
         run: nix develop --command bash -c "pnpm i && pnpm run test"
+      # @mock-filelist/filelist Example Test
+      - name: Example Test (@mock-filelist/filelist)
+        run: nix develop --command bash -c "pnpm i && pnpm run filelist-example:test"
+      # @mock-filelist/browser Example Test
+      - name: Example Test (@mock-filelist/browser)
+        run: nix develop --command bash -c "pnpm i && pnpm run browser-example:test"

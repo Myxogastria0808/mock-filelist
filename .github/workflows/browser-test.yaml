@@ -19,3 +19,6 @@ jobs:
       # Test (@mock-filelist/browser)
       - name: Test (@mock-filelist/browser)
         run: nix develop --command bash -c "pnpm i && pnpm run test:browser"
+      # @mock-filelist/browser Example Test
+      - name: Example Test (@mock-filelist/browser)
+        run: nix develop --command bash -c "pnpm i && pnpm run browser-example:test"
