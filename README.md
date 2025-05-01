@@ -7,6 +7,12 @@
 ![Vitest](https://img.shields.io/badge/-vitest-6e9f18?style=flat&logo=vitest&logoColor=ffffff)
 ![Typedoc](https://img.shields.io/badge/docs-typedoc-blue?style=flat-square&logo=typescript&logoColor=white)
 [![RenovateBot](https://img.shields.io/badge/RenovateBot-1A1F6C?logo=renovate&logoColor=fff)](#)
+[![NPM Version](https://img.shields.io/npm/v/@mock-filelist/browser.svg)](https://www.npmjs.com/package/@mock-filelist/browser)
+[![Download NPM](https://img.shields.io/npm/dm/@mock-filelist/browser.svg?style=flat)](https://www.npmjs.com/package/@mock-filelist/browser)
+[![NPM Version](https://img.shields.io/npm/v/@mock-filelist/filelist.svg)](https://www.npmjs.com/package/@mock-filelist/filelist)
+[![Download NPM](https://img.shields.io/npm/dm/@mock-filelist/filelist.svg?style=flat)](https://www.npmjs.com/package/@mock-filelist/filelist)
+[![NPM Version](https://img.shields.io/npm/v/@mock-filelist/node.svg)](https://www.npmjs.com/package/@mock-filelist/node)
+[![Download NPM](https://img.shields.io/npm/dm/@mock-filelist/node.svg?style=flat)](https://www.npmjs.com/package/@mock-filelist/node)
 
 mock-filelist is a mock generator of (FileList|File[]) and File object.
 
@@ -62,6 +68,15 @@ This repository has three npm packages named [@mock-filelist/filelist](https://w
 ## Documentation
 
 https://myxogastria0808.github.io/mock-filelist/
+
+# DeepWiki
+
+> [!WARNING]
+> The accuracy of the contents of generated deepwiki has not been verified by me.
+> 
+> I recommend that you look at a [documentation](https://myxogastria0808.github.io/mock-filelist/).
+
+https://deepwiki.com/Myxogastria0808/mock-filelist/
 
 > [!IMPORTANT]
 > Be sure to use the latest version.
