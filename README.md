@@ -81,7 +81,7 @@ https://myxogastria0808.github.io/mock-filelist/filelist/
 
 https://github.com/Myxogastria0808/mock-filelist/blob/main/packages/filelist/README.md
 
-### Example (React + Vitest)
+### Example (React + Vitest + **happy-dom**)
 
 https://github.com/Myxogastria0808/mock-filelist/blob/main/examples/filelist/
 
@@ -97,7 +97,7 @@ https://myxogastria0808.github.io/mock-filelist/browser/
 
 https://github.com/Myxogastria0808/mock-filelist/blob/main/packages/browser/README.md
 
-### Example (React + Vitest)
+### Example (React + Vitest + **happy-dom**)
 
 https://github.com/Myxogastria0808/mock-filelist/blob/main/examples/browser/
 
