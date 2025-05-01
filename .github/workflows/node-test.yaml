@@ -22,3 +22,6 @@ jobs:
       # Build Package (@mock-filelist/node)
       - name: Build Package (@mock-filelist/node)
         run: nix develop --command bash -c "pnpm i && pnpm run build:node"
+      # @mock-filelist/node Example Test
+      - name: Example Test (@mock-filelist/node)
+        run: nix develop --command bash -c "pnpm i && pnpm run node-example:test"
