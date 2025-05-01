@@ -26,7 +26,7 @@
     }
   },
   "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/index.d.mts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Myxogastria0808/mock-filelist.git"
