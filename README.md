@@ -13,6 +13,10 @@
 
 mock-filelist is a mock generator of FileList and File type object.
 
+## Documentation
+
+https://myxogastria0808.github.io/mock-filelist/
+
 > [!IMPORTANT]
 > Be sure to use the latest version.
 
@@ -20,11 +24,34 @@ mock-filelist is a mock generator of FileList and File type object.
 
 https://www.npmjs.com/package/@mock-filelist/filelist/
 
+### Documentstion
+
+https://myxogastria0808.github.io/mock-filelist/filelist/
+
+### README.md
+
+https://github.com/Myxogastria0808/mock-filelist/blob/main/packages/filelist/README.md
+
 ## @mock-filelist/browser
 
 https://www.npmjs.com/package/@mock-filelist/browser/
+
+### Documentation
+
+https://myxogastria0808.github.io/mock-filelist/browser/
+
+### README.md
+
+https://github.com/Myxogastria0808/mock-filelist/blob/main/packages/browser/README.md
 
 ## @mock-filelist/node
 
 https://www.npmjs.com/package/@mock-filelist/node/
 
+### Documentation
+
+https://myxogastria0808.github.io/mock-filelist/node/
+
+### README.md
+
+https://github.com/Myxogastria0808/mock-filelist/blob/main/packages/node/README.md
