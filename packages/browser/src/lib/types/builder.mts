@@ -8,6 +8,7 @@ export interface RemoteFileListBuilderType {
   addFileObject(file: File): this;
   addFileObjects(files: File[]): this;
   build(): FileList;
+  buildFileArray(): File[];
 }
 
 export interface RemoteFileBuilderType {
@@ -20,4 +21,5 @@ export interface RemoteFileBuilderType {
 export interface MergeFileListBuilderType {
   addFileObjects(files: Iterable<File>): this;
   build(): FileList;
+  buildFileArray(): File[];
 }

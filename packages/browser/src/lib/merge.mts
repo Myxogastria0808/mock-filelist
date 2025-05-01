@@ -14,4 +14,8 @@ export class MergeFileListBuilder implements MergeFileListBuilderType {
   build(): FileList {
     return buildFileList(this.files);
   }
+
+  buildFileArray(): File[] {
+    return this.files;
+  }
 }

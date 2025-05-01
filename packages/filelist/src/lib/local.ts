@@ -52,6 +52,10 @@ export class LocalFileListBuilder implements LocalFileListBuilderType {
   build(): FileList {
     return buildFileList(this.files);
   }
+
+  buildFileArray(): File[] {
+    return this.files;
+  }
 }
 
 export class LocalFileBuilder implements LocalFileBuilderType {

@@ -4,11 +4,11 @@ export default defineConfig([
   // for CommonJS
   {
     entry: ['src/index.ts', '!src/**/*.test.ts'],
-    format: ['esm'],
+    format: ['esm', 'cjs'],
     outDir: 'dist',
     splitting: false,
     sourcemap: true,
     dts: true,
-    target: 'es2022',
+    target: 'es2024',
   },
 ]);

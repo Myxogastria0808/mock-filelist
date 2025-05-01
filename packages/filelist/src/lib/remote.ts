@@ -53,6 +53,10 @@ export class RemoteFileListBuilder implements RemoteFileListBuilderType {
   build(): FileList {
     return buildFileList(this.files);
   }
+
+  buildFileArray(): File[] {
+    return this.files;
+  }
 }
 
 export class RemoteFileBuilder implements RemoteFileBuilderType {
