@@ -25,7 +25,7 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@mock-filelist/filelist": "workspace:*",
+    "@mock-filelist/browser": "workspace:*",
     "@eslint/js": "catalog:examples",
     "@types/react": "catalog:examples",
     "@types/react-dom": "catalog:examples",
