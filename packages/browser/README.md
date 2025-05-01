@@ -1,8 +1,5 @@
 # @mock-filelist/browser
 
-> [!WARNING]
-> This package is currently under development.
-
 [![Test](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/browser-test.yaml/badge.svg)](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/browser-test.yaml)
 [![Docs](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/docs.yaml/badge.svg)](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/docs.yaml)
 [![NPM Version](https://img.shields.io/npm/v/@mock-filelist/browser.svg)](https://www.npmjs.com/package/@mock-filelist/browser)

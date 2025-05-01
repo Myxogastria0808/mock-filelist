@@ -1,8 +1,5 @@
 # @mock-filelist/node
 
-> [!WARNING]
-> This package is currently under development.
-
 [![Test](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/node-test.yaml/badge.svg)](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/node-test.yaml)
 [![Docs](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/docs.yaml/badge.svg)](https://github.com/Myxogastria0808/mock-filelist/actions/workflows/docs.yaml)
 [![NPM Version](https://img.shields.io/npm/v/@mock-filelist/node.svg)](https://www.npmjs.com/package/@mock-filelist/node)
