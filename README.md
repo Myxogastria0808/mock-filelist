@@ -81,6 +81,10 @@ https://myxogastria0808.github.io/mock-filelist/filelist/
 
 https://github.com/Myxogastria0808/mock-filelist/blob/main/packages/filelist/README.md
 
+### Example (React + Vitest)
+
+https://github.com/Myxogastria0808/mock-filelist/blob/main/examples/filelist/
+
 ## @mock-filelist/browser
 
 https://www.npmjs.com/package/@mock-filelist/browser/
@@ -92,6 +96,10 @@ https://myxogastria0808.github.io/mock-filelist/browser/
 ### README.md
 
 https://github.com/Myxogastria0808/mock-filelist/blob/main/packages/browser/README.md
+
+### Example (React + Vitest)
+
+https://github.com/Myxogastria0808/mock-filelist/blob/main/examples/browser/
 
 ## @mock-filelist/node
 
