@@ -1,0 +1,32 @@
+{
+  "name": "@mock-filelist/node-example",
+  "author": "Myxogastria0808",
+  "license": "MIT",
+  "description": "This project is a example of @mock-filelist/node.",
+  "version": "0.0.0",
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./dist/index.d.ts",
+        "require": "./dist/index.js"
+      }
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "start": "tsup && node dist/index.js",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@mock-filelist/node": "workspace:*",
+    "@types/node": "catalog:commonjs",
+    "tsup": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

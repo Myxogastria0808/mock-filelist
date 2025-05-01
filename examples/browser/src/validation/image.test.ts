@@ -2,8 +2,8 @@ import { describe, expect, test } from 'vitest';
 import { imageSchema, ImageSchemaType } from './image';
 import { RemoteFileListBuilder } from '@mock-filelist/browser';
 
-describe('imageSchemaのバリデーション', () => {
-  test.concurrent('有効な入力', async () => {
+describe('Validation Test of imageSchema', () => {
+  test.concurrent('Vaild Value', async () => {
     let filelist: FileList = (
       await new RemoteFileListBuilder().addFile({
         url: 'https://pub-5d8c638a3a5f4474b17d2a501dae7b3b.r2.dev/sample.png',

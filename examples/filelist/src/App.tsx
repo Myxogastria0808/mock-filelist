@@ -61,7 +61,7 @@ function App() {
     <StyledContainer>
       <StyledTitle>File Upload Form Sample</StyledTitle>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <StyledLabel htmlFor="imgae">画像のアップロード</StyledLabel>
+        <StyledLabel htmlFor="imgae">Upload an Image</StyledLabel>
         <Controller
           name="image"
           control={control}
@@ -70,7 +70,7 @@ function App() {
               name={name}
               storeAsFile={true}
               credits={false}
-              labelIdle={'<span class="filepond--label-action"> ファイル選択 </span> または ドラッグ&ドロップ'}
+              labelIdle={'<span class="filepond--label-action"> File Selection </span> or Drag and Drop'}
               onupdatefiles={(files) => {
                 const dataTransfer = new DataTransfer();
                 files.forEach((file) => dataTransfer.items.add(file.file as File));

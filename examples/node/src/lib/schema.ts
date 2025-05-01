@@ -7,7 +7,7 @@ const MAX_SIZE = 1024 * 1024 * 100; //100MB
 
 const imageSchema = z.object({
   image: z
-    .custom<FileList>()
+    .custom<File[]>()
     .refine((files) => 0 < files.length, {
       message: 'Attachment of image files is required.',
     })

@@ -1,5 +1,8 @@
 {
   "name": "@mock-filelist/browser-example",
+  "author": "Myxogastria0808",
+  "license": "MIT",
+  "description": "This project is a example of @mock-filelist/browser.",
   "private": true,
   "version": "0.0.0",
   "type": "module",
