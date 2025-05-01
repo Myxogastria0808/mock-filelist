@@ -1,11 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!------------------og setting----------------------->
+    <meta
+      name="”description”"
+      content="This website explains about npm packages named @mock-filelist/filelist, @mock-filelist/browser and @mock-filelist/node."
+    />
+    <meta
+      name="keyword"
+      content="mock-filelist @mock-filelist/filelist @mock-filelist/browser @mock-filelist/node mock File FileList zod test typescript commonjs esmodule"
+    />
+    <meta
+      property="og:description"
+      content="This website explains about npm packages named @mock-filelist/filelist, @mock-filelist/browser and @mock-filelist/node."
+    />
+    <meta property="og:title" content="mock-filelist" />
+    <meta property="og:image:width" content="1500" />
+    <!-- TODO: 画像のURLを指定する -->
+    <meta property="og:image" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://myxogastria0808.github.io/mock-filelist/" />
+    <!------------------og setting----------------------->
+    <!------------------google fonts----------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        font-family: 'Noto Serif', serif;
+      }
+    </style>
+    <!------------------google fonts----------------------->
     <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="shortcut icon" href="./icon.ico" />
+    <meta name="theme-color" content="rgb(251, 250, 245)" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mock-filelist</title>
   </head>
   <body>
     <h1>mock-filelist</h1>
+
+    <table>
+      <tbody>
+        <tr>
+          <th rowspan="2"></th>
+          <th rowspan="2">Available Environment</th>
+          <th colspan="3">Generatable Objects</th>
+          <th colspan="2">Available Files</th>
+        </tr>
+        <tr>
+          <th>File</th>
+          <th>FileList</th>
+          <th>File[]</th>
+          <th>Local Files</th>
+          <th>Files on The Network</th>
+        </tr>
+        <tr>
+          <td><strong>@mock-filelist/filelist</strong></td>
+          <td>Node + happy-dom</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>✅</td>
+        </tr>
+        <tr>
+          <td>@mock-filelist/browser</td>
+          <td>Browser</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>❌</td>
+          <td>❌</td>
+          <td>✅</td>
+        </tr>
+        <tr>
+          <td>@mock-filelist/node</td>
+          <td>Node</td>
+          <td>✅</td>
+          <td>❌</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>❌</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
