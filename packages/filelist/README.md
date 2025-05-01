@@ -41,7 +41,7 @@ This package is a mock generator of FileList and File type object for ES Modules
             <td>✅</td>
         </tr>
         <tr>
-            <td>@mock-filelist/browser</td>
+            <td><a href="https://www.npmjs.com/package/@mock-filelist/browser/">@mock-filelist/browser</a></td>
             <td>Browser<br/>or</br/>Node + happy-dom</td>
             <td>✅</td>
             <td>✅</td>
@@ -50,7 +50,7 @@ This package is a mock generator of FileList and File type object for ES Modules
             <td>✅</td>
         </tr>
         <tr>
-            <td>@mock-filelist/node</td>
+            <td><a href="https://www.npmjs.com/package/@mock-filelist/node/">@mock-filelist/node</a></td>
             <td>Node</td>
             <td>✅</td>
             <td>❌</td>
