@@ -7,18 +7,17 @@ export interface RemoteFileListBuilderType {
   addFiles(files: RemoteFileSource[]): Promise<this>;
   addFileObject(file: File): this;
   addFileObjects(files: File[]): this;
-  build(): Promise<FileList>;
+  build(): FileList;
 }
 
 export interface RemoteFileBuilderType {
   addBlob(file: BlobFileSource): this;
-  addBlobs(files: BlobFileSource[]): this;
   addFile(file: RemoteFileSource): Promise<this>;
   addFileObject(file: File): this;
-  build(): Promise<File>;
+  build(): File;
 }
 
 export interface MergeFileListBuilderType {
   addFileObjects(files: Iterable<File>): this;
-  build(): Promise<FileList>;
+  build(): FileList;
 }

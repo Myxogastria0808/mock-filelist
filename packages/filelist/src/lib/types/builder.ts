@@ -17,12 +17,11 @@ export interface RemoteFileListBuilderType {
   addFiles(files: RemoteFileSource[]): Promise<this>;
   addFileObject(file: File): this;
   addFileObjects(files: File[]): this;
-  build(): Promise<FileList>;
+  build(): FileList;
 }
 
 export interface LocalFileBuilderType {
   addBlob(file: BlobFileSource): this;
-  addBlobs(files: BlobFileSource[]): this;
   addFile(file: LocalFileSource): this;
   addFileObject(file: File): this;
   build(): File;
@@ -30,13 +29,12 @@ export interface LocalFileBuilderType {
 
 export interface RemoteFileBuilderType {
   addBlob(file: BlobFileSource): this;
-  addBlobs(files: BlobFileSource[]): this;
   addFile(file: RemoteFileSource): Promise<this>;
   addFileObject(file: File): this;
-  build(): Promise<File>;
+  build(): File;
 }
 
 export interface MergeFileListBuilderType {
   addFileObjects(files: Iterable<File>): this;
-  build(): Promise<FileList>;
+  build(): FileList;
 }

@@ -67,15 +67,6 @@ export class LocalFileBuilder implements LocalFileBuilderType {
     return this;
   }
 
-  addBlobs(blobs: BlobFileSource[]): this {
-    for (const blob of blobs) {
-      this.file = new File([blob.blob], blob.name, {
-        type: blob.mimeType,
-      });
-    }
-    return this;
-  }
-
   addFile(file: LocalFileSource): this {
     this.file = localFileSourceConverter(file);
     return this;

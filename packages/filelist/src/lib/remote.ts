@@ -50,7 +50,7 @@ export class RemoteFileListBuilder implements RemoteFileListBuilderType {
     return this;
   }
 
-  async build(): Promise<FileList> {
+  build(): FileList {
     return buildFileList(this.files);
   }
 }
@@ -68,15 +68,6 @@ export class RemoteFileBuilder implements RemoteFileBuilderType {
     return this;
   }
 
-  addBlobs(blobs: BlobFileSource[]): this {
-    for (const blob of blobs) {
-      this.file = new File([blob.blob], blob.name, {
-        type: blob.mimeType,
-      });
-    }
-    return this;
-  }
-
   async addFile(file: RemoteFileSource): Promise<this> {
     this.file = await remoteFileSourceConverter(file);
     return this;
@@ -87,7 +78,7 @@ export class RemoteFileBuilder implements RemoteFileBuilderType {
     return this;
   }
 
-  async build(): Promise<File> {
+  build(): File {
     return buildFile(this.file);
   }
 }

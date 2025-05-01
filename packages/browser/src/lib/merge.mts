@@ -11,7 +11,7 @@ export class MergeFileListBuilder implements MergeFileListBuilderType {
     return this;
   }
 
-  async build(): Promise<FileList> {
+  build(): FileList {
     return buildFileList(this.files);
   }
 }
