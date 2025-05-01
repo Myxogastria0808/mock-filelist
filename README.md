@@ -34,7 +34,7 @@ This repository has three npm packages named [@mock-filelist/filelist](https://w
         </tr>
         <tr>
             <td>@mock-filelist/filelist</td>
-            <td>Node + jsdom</td>
+            <td>Node + happy-dom</td>
             <td>✅</td>
             <td>✅</td>
             <td>✅</td>
