@@ -19,6 +19,51 @@ This package is a mock generator of FileList and File type object for ES Modules
 > [!IMPORTANT]
 > Be sure to use the latest version.
 
+<table>
+    <tbody>
+        <tr>
+            <th rowspan="2"></th>
+            <th rowspan="2">Available Environment</th>
+            <th colspan="3">Generatable Objects</th>
+            <th colspan="2">Available Files</th>
+        </tr>
+        <tr>
+            <th>File</th>
+            <th>FileList</th>
+            <th>File[]</th>
+            <th>Local Files</th>
+            <th>Files on The Network</th>
+        </tr>
+        <tr>
+            <td><strong>@mock-filelist/filelist</strong></td>
+            <td>Node + jsdom</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
+        </tr>
+        <tr>
+            <td>@mock-filelist/browser</td>
+            <td>Browser</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>✅</td>
+        </tr>
+        <tr>
+            <td>@mock-filelist/node</td>
+            <td>Node</td>
+            <td>✅</td>
+            <td>❌</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>❌</td>
+        </tr>
+    </tbody>
+</table>
+
 ## HTML Documentation
 
 https://myxogastria0808.github.io/mock-filelist/filelist/
