@@ -29,7 +29,7 @@ This package is a mock generator of FileList and File type object for ES Modules
             <th>FileList</th>
             <th>File[]</th>
             <th>Local Files</th>
-            <th>Files on The Network</th>
+            <th>Files on the Internet</th>
         </tr>
         <tr>
             <td>@mock-filelist/filelist</td>
@@ -45,7 +45,7 @@ This package is a mock generator of FileList and File type object for ES Modules
             <td>Browser</td>
             <td>✅</td>
             <td>✅</td>
-            <td>❌</td>
+            <td>✅</td>
             <td>❌</td>
             <td>✅</td>
         </tr>
