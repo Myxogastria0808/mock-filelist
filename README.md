@@ -40,7 +40,7 @@ This repository has three npm packages named [@mock-filelist/filelist](https://w
         </tr>
         <tr>
             <td>@mock-filelist/browser</td>
-            <td>Browser</td>
+            <td>Browser or Node + happy-dom</td>
             <td>✅</td>
             <td>✅</td>
             <td>✅</td>
