@@ -10,6 +10,8 @@
 
 mock-filelist is a mock generator of (FileList|File[]) and File object.
 
+When you want to do a test with Vitest against a zod schema, you can use it as a mock for an object in File, FieList or File[].
+
 ## About This Repository
 
 This repository has three npm packages named [@mock-filelist/filelist](https://www.npmjs.com/package/@mock-filelist/filelist/), [@mock-fielist/browser](https://www.npmjs.com/package/@mock-filelist/browser/), [@mock-filelist/node](https://www.npmjs.com/package/@mock-filelist/node/).
@@ -58,6 +60,7 @@ This repository has three npm packages named [@mock-filelist/filelist](https://w
         </tr>
     </tbody>
 </table>
+
 
 ## Documentation
 
