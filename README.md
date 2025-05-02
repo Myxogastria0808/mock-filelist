@@ -14,7 +14,7 @@ When you want to test against a `zod` schema (zod: validation library) with `vit
 
 ## Simple Example
 
-When you create zod schema like this, you can use `@mock-filelist/filelist` or `@mock-filelist/filelist` package like [under the example](https://github.com/Myxogastria0808/mock-filelist?tab=readme-ov-file#mock-filelistfilelist-example)!
+If you create zod schema like this, you can use `@mock-filelist/filelist` or `@mock-filelist/browser` package like [under the example](https://github.com/Myxogastria0808/mock-filelist?tab=readme-ov-file#mock-filelistfilelist-example)!
 
 `image.ts`
 
