@@ -10,7 +10,7 @@
 
 `mock-filelist` is a mock (File | FileList | File[]) generator.
 
-When you want to test against a `zod` schema (zod: validation library) with `vitest` (vitest: testing library), you can use `mock-filelist` as a mock object for an object in File, FileList or File[].
+When you want to test against a `zod` schema (zod: validation library) with `vitest` (vitest: testing library), you can use a mock (File | FileList | File[]) genrated by `mock-filelist`.
 
 ## Simple Example
 
