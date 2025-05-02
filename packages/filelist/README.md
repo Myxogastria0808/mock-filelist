@@ -20,7 +20,7 @@ This package is a mock generator of FileList and File type object for ES Modules
     <tbody>
         <tr>
             <th rowspan="2"></th>
-            <th rowspan="2">Available Environment</th>
+            <th rowspan="2">Required Environment</th>
             <th colspan="3">Generatable Objects</th>
             <th colspan="2">Available Files</th>
         </tr>
