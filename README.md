@@ -51,7 +51,7 @@ export type ImageSchemaType = z.infer<typeof imageSchema>;
 
 You can use `@mock-filelist/filelist` or `@mock-filelist/browser` package like this!
 
-This simple example depends `vitest` and `happy-dom` (happy-dom: a javascript implementation of a web browser).
+This simple example depends on `vitest` and `happy-dom` (happy-dom: a javascript implementation of a web browser).
 
 If you want to see the entire example project, you can find examples of each package in [the examples directory of this repository](https://github.com/Myxogastria0808/mock-filelist/tree/main/examples).
 
