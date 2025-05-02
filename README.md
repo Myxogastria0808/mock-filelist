@@ -59,7 +59,7 @@ If you want to see the complete sourcecode of example project, look [this](https
 
 ```typescript
 import { describe, expect, test } from 'vitest';
-import { imageSchema, ImageSchemaType } from './image'; //<- this program is above example
+import { imageSchema, ImageSchemaType } from './image'; //<- this sourcecode is above example
 import { LocalFileListBuilder } from '@mock-filelist/filelist';
 
 describe('Validation Test of imageSchema', () => {
