@@ -53,7 +53,7 @@ You can use `@mock-filelist/filelist` or `@mock-filelist/browser` package like t
 
 This simple example depends on `vitest` and `happy-dom` (happy-dom: a javascript implementation of a web browser).
 
-If you want to see the complete sourcecode of example project, you can find examples of each package in [the examples directory of this repository](https://github.com/Myxogastria0808/mock-filelist/tree/main/examples).
+If you want to see the complete sourcecode of example project, look [this project](https://github.com/Myxogastria0808/mock-filelist/tree/main/examples/filelist/).
 
 `image.test.ts`
 
