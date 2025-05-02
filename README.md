@@ -64,7 +64,7 @@ import { LocalFileListBuilder } from '@mock-filelist/filelist';
 
 describe('Validation Test of imageSchema', () => {
   test.concurrent('Vaild Value', async () => {
-    // ↓ You can create FileList type mock object using @mock-filelist/filelist!
+    // ↓ You can create a mock FileList type object using @mock-filelist/filelist!
     let filelist: FileList = new LocalFileListBuilder()
       .addFile({ filePath: 'test_assets/sample.png', name: 'sample.png', mimeType: 'image/png' })
       .build();
