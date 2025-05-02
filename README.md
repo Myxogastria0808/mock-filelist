@@ -16,6 +16,8 @@ When you want to do a test with Vitest against a zod schema, you can use it as a
 
 When you create zod schema like this, you can use `@mock-filelist/filelist` or `@mock-filelist/filelist` package like [under the example](https://github.com/Myxogastria0808/mock-filelist?tab=readme-ov-file#mock-filelistfilelist-example)!
 
+`image.ts`
+
 ```typescript
 import { z } from 'zod';
 
@@ -53,9 +55,11 @@ This simple example depends `vitest` (a testing library).
 
 If you want to see the entire example project, you can find examples of each package in [the examples directory of this repository](https://github.com/Myxogastria0808/mock-filelist/tree/main/examples).
 
+`image.test.ts`
+
 ```typescript
 import { describe, expect, test } from 'vitest';
-import { imageSchema, ImageSchemaType } from './image';
+import { imageSchema, ImageSchemaType } from './image'; //<- this program is above example
 import { LocalFileListBuilder } from '@mock-filelist/filelist';
 
 describe('Validation Test of imageSchema', () => {
