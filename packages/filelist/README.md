@@ -56,7 +56,7 @@ This package is a mock generator of FileList and File type object for ES Modules
             <td>❌</td>
             <td>✅</td>
             <td>✅</td>
-            <td>❌</td>
+            <td>✅</td>
         </tr>
     </tbody>
 </table>

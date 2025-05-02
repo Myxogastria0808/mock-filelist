@@ -54,7 +54,7 @@ This repository has three npm packages named [@mock-filelist/filelist](https://w
             <td>❌</td>
             <td>✅</td>
             <td>✅</td>
-            <td>❌</td>
+            <td>✅</td>
         </tr>
     </tbody>
 </table>

@@ -1,8 +1,9 @@
-import { BlobFileSource, LocalFileSource } from './types/args';
-import { LocalFileBuilderType, LocalFileArrayBuilderType } from './types/builder';
-import { buildFile, localFileSourceConverter } from './types/helper';
+import { BlobFileSource, RemoteFileSource } from './types/args';
+import { RemoteFileBuilderType, RemoteFileArrayBuilderType } from './types/builder';
+import { buildFile, remoteFileSourceConverter } from './types/helper';
 
-export class LocalFileArrayBuilder implements LocalFileArrayBuilderType {
+/* Remote Class */
+export class RemoteFileArrayBuilder implements RemoteFileArrayBuilderType {
   private files: File[] = [];
 
   addBlob(blob: BlobFileSource): this {
@@ -23,15 +24,15 @@ export class LocalFileArrayBuilder implements LocalFileArrayBuilderType {
     return this;
   }
 
-  addFile(file: LocalFileSource): this {
-    const object = localFileSourceConverter(file);
+  async addFile(file: RemoteFileSource): Promise<this> {
+    const object = await remoteFileSourceConverter(file);
     this.files.push(object);
     return this;
   }
 
-  addFiles(files: LocalFileSource[]): this {
+  async addFiles(files: RemoteFileSource[]): Promise<this> {
     for (const file of files) {
-      const object = localFileSourceConverter(file);
+      const object = await remoteFileSourceConverter(file);
       this.files.push(object);
     }
     return this;
@@ -54,7 +55,7 @@ export class LocalFileArrayBuilder implements LocalFileArrayBuilderType {
   }
 }
 
-export class LocalFileBuilder implements LocalFileBuilderType {
+export class RemoteFileBuilder implements RemoteFileBuilderType {
   private file: File | undefined;
   constructor() {
     this.file = undefined;
@@ -67,8 +68,8 @@ export class LocalFileBuilder implements LocalFileBuilderType {
     return this;
   }
 
-  addFile(file: LocalFileSource): this {
-    this.file = localFileSourceConverter(file);
+  async addFile(file: RemoteFileSource): Promise<this> {
+    this.file = await remoteFileSourceConverter(file);
     return this;
   }
 

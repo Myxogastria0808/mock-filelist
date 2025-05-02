@@ -1,5 +1,5 @@
 import { readFileSync } from 'fs';
-import { LocalFileSource } from './args';
+import { LocalFileSource, RemoteFileSource } from './args';
 
 /* Build Helper Function */
 export const buildFile = (file: File | undefined): File => {
@@ -16,4 +16,22 @@ export const localFileSourceConverter = (file: LocalFileSource): File => {
   return new File([blob], file.name, {
     type: file.mimeType,
   });
+};
+
+/* Remote Class Helper Function */
+export const remoteFileSourceConverter = async (source: RemoteFileSource): Promise<File> => {
+  const object = await fetch(source.url)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`Failed to fetch ${source.url}: ${response.status} ${response.statusText}`);
+      }
+      return response.blob();
+    })
+    .then((blob) => {
+      return new File([blob], source.name, { type: source.mimeType });
+    })
+    .catch((error) => {
+      throw new Error(`Error converting remote file: ${error.message}`);
+    });
+  return object;
 };

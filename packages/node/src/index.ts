@@ -1,3 +1,4 @@
-export { LocalFileBuilder, LocalFileListBuilder } from './lib/local';
+export { LocalFileBuilder, LocalFileArrayBuilder } from './lib/local';
+export { RemoteFileBuilder, RemoteFileArrayBuilder } from './lib/remote';
 export { MergeFileListBuilder } from './lib/merge';
-export { FileSourceBase, BlobFileSource, LocalFileSource } from './lib/types/args';
+export { FileSourceBase, BlobFileSource, LocalFileSource, RemoteFileSource } from './lib/types/args';

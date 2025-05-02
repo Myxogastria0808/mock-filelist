@@ -1,6 +1,6 @@
-import { BlobFileSource, LocalFileSource } from './args';
+import { BlobFileSource, LocalFileSource, RemoteFileSource } from './args';
 
-export interface LocalFileListBuilderType {
+export interface LocalFileArrayBuilderType {
   addBlob(file: BlobFileSource): this;
   addBlobs(files: BlobFileSource[]): this;
   addFile(file: LocalFileSource): this;
@@ -10,9 +10,26 @@ export interface LocalFileListBuilderType {
   build(): File[];
 }
 
+export interface RemoteFileArrayBuilderType {
+  addBlob(file: BlobFileSource): this;
+  addBlobs(files: BlobFileSource[]): this;
+  addFile(file: RemoteFileSource): Promise<this>;
+  addFiles(files: RemoteFileSource[]): Promise<this>;
+  addFileObject(file: File): this;
+  addFileObjects(files: File[]): this;
+  build(): File[];
+}
+
 export interface LocalFileBuilderType {
   addBlob(file: BlobFileSource): this;
   addFile(file: LocalFileSource): this;
+  addFileObject(file: File): this;
+  build(): File;
+}
+
+export interface RemoteFileBuilderType {
+  addBlob(file: BlobFileSource): this;
+  addFile(file: RemoteFileSource): Promise<this>;
   addFileObject(file: File): this;
   build(): File;
 }

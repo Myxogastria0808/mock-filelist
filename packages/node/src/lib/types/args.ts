@@ -10,3 +10,7 @@ export type BlobFileSource = FileSourceBase & {
 export type LocalFileSource = FileSourceBase & {
   filePath: string;
 };
+
+export type RemoteFileSource = FileSourceBase & {
+  url: string;
+};

@@ -1,8 +1,8 @@
 import { imageSchema, ImageSchemaType } from './lib/schema';
-import { LocalFileListBuilder } from '@mock-filelist/node';
+import { LocalFileArrayBuilder } from '@mock-filelist/node';
 
 const main = () => {
-  const filelist: File[] = new LocalFileListBuilder()
+  const filelist: File[] = new LocalFileArrayBuilder()
     .addFile({ filePath: 'test_assets/sample.png', name: 'sample.png', mimeType: 'image/png' })
     .build();
   const validInput: ImageSchemaType = {
