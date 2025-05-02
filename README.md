@@ -79,7 +79,7 @@ describe('Validation Test of imageSchema', () => {
 
 ## About This Repository
 
-This repository has three npm packages named [@mock-filelist/filelist](https://www.npmjs.com/package/@mock-filelist/filelist/), [@mock-fielist/browser](https://www.npmjs.com/package/@mock-filelist/browser/), [@mock-filelist/node](https://www.npmjs.com/package/@mock-filelist/node/).
+This repository has three npm packages named [@mock-filelist/filelist](https://www.npmjs.com/package/@mock-filelist/filelist/), [@mock-fielist/browser](https://www.npmjs.com/package/@mock-filelist/browser/) and [@mock-filelist/node](https://www.npmjs.com/package/@mock-filelist/node/).
 
 <table>
     <tbody>
