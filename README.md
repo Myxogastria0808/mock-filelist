@@ -8,9 +8,9 @@
 ![Typedoc](https://img.shields.io/badge/docs-typedoc-blue?style=flat-square&logo=typescript&logoColor=white)
 [![RenovateBot](https://img.shields.io/badge/RenovateBot-1A1F6C?logo=renovate&logoColor=fff)](#)
 
-mock-filelist is a mock generator of (FileList|File[]) and File object.
+mock-filelist is a mock object generator of (FileList|File[]) and File object.
 
-When you want to test against a `zod` schema (zod: validation library) with `vitest` (vitest: testing library), you can use `mock-filelist` as a mock for an object in File, FileList or File[].
+When you want to test against a `zod` schema (zod: validation library) with `vitest` (vitest: testing library), you can use `mock-filelist` as a mock object for an object in File, FileList or File[].
 
 ## Simple Example
 
