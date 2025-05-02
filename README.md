@@ -14,7 +14,7 @@ When you want to do a test with Vitest against a zod schema, you can use it as a
 
 ## Simple Example
 
-When you create zod schema like this, you can use `@mock-filelist/filelist` or `@mock-filelist/filelist` package!
+When you create zod schema like this, you can use `@mock-filelist/filelist` or `@mock-filelist/filelist` package like [under the example](https://github.com/Myxogastria0808/mock-filelist?tab=readme-ov-file#@mock-filelist/filelist-example)!
 
 ```typescript
 import { z } from 'zod';
@@ -44,6 +44,8 @@ const imageSchema = z.object({
 export { imageSchema };
 export type ImageSchemaType = z.infer<typeof imageSchema>;
 ```
+
+### @mock-filelist/filelist Example
 
 You can use `@mock-filelist/filelist` or `@mock-filelist/filelist` package like this!
 
