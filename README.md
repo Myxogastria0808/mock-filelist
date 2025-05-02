@@ -126,6 +126,9 @@ This repository has three npm packages named [@mock-filelist/filelist](https://w
     </tbody>
 </table>
 
+> [!WARNING]
+> If you use jsdom instead of happy-dom, `@mock-filelist/filelist` and `@mock-filelist/browser` are not processing.
+
 
 ## Documentation
 
