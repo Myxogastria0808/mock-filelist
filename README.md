@@ -12,6 +12,65 @@ mock-filelist is a mock generator of (FileList|File[]) and File object.
 
 When you want to do a test with Vitest against a zod schema, you can use it as a mock for an object in File, FieList or File[].
 
+## Simple Example
+
+When you create zod schema like this, you can use `@mock-filelist/filelist` or `@mock-filelist/filelist` package!
+
+```typescript
+import { z } from 'zod';
+
+//Acceptable MIME types
+const ACCEPT_MIME_TYPES = ['image/png', 'image/jpeg', 'image/webp'];
+//Allowable file size
+const MAX_SIZE = 1024 * 1024 * 100; //100MB
+
+const imageSchema = z.object({
+  image: z
+    .custom<FileList>()
+    .refine((files) => 0 < files.length, {
+      message: 'Attachment of image files is required.',
+    })
+    .refine((files) => 0 < files.length && files.length < 2, {
+      message: 'Only one image file can be attached.',
+    })
+    .refine((files) => Array.from(files).every((file) => file.size < MAX_SIZE), {
+      message: 'Image files can be attached up to 100MB.',
+    })
+    .refine((files) => Array.from(files).every((file) => ACCEPT_MIME_TYPES.includes(file.type)), {
+      message: 'You can attach jpeg, jpg, png, and webp image files.',
+    }),
+});
+
+export { imageSchema };
+export type ImageSchemaType = z.infer<typeof imageSchema>;
+```
+
+You can use `@mock-filelist/filelist` or `@mock-filelist/filelist` package like this!
+
+This simple example depends `vitest` (a testing library).
+
+If you want to see the entire example project, you can find examples of each package in [the examples directory of this repository](https://github.com/Myxogastria0808/mock-filelist/tree/main/examples).
+
+```typescript
+import { describe, expect, test } from 'vitest';
+import { imageSchema, ImageSchemaType } from './image';
+import { LocalFileListBuilder } from '@mock-filelist/filelist';
+
+describe('Validation Test of imageSchema', () => {
+  test.concurrent('Vaild Value', async () => {
+    // ↓ You can create FileList type mock object using @mock-filelist/filelist!
+    let filelist: FileList = new LocalFileListBuilder()
+      .addFile({ filePath: 'test_assets/sample.png', name: 'sample.png', mimeType: 'image/png' })
+      .build();
+    const validInput: ImageSchemaType = {
+      image: filelist,
+    };
+    const result = imageSchema.safeParse(validInput);
+    expect(result.success).toBe(true);
+  });
+});
+```
+
 ## About This Repository
 
 This repository has three npm packages named [@mock-filelist/filelist](https://www.npmjs.com/package/@mock-filelist/filelist/), [@mock-fielist/browser](https://www.npmjs.com/package/@mock-filelist/browser/), [@mock-filelist/node](https://www.npmjs.com/package/@mock-filelist/node/).
