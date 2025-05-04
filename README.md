@@ -14,7 +14,27 @@ When you want to test against a `zod` schema (zod: validation library) with `vit
 
 ## Simple Example
 
-If you create zod schema like this, you can use `@mock-filelist/filelist` or `@mock-filelist/browser` package like [under the example](https://github.com/Myxogastria0808/mock-filelist?tab=readme-ov-file#mock-filelistfilelist-example)!
+When you use `@mock-filelist/filelist` or `@mock-filelist/browser`, you have to add the settings to `vite.config.ts` at first.
+
+`vite.config.ts`
+
+```typescript
+/// <reference types="vitest" />
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react-swc';
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  // ↓ Add below settings
+  test: {
+    environment: 'happy-dom',
+  },
+});
+
+```
+
+If you create zod schema like this, you can use `@mock-filelist/filelist` or `@mock-filelist/browser` like [under the example](https://github.com/Myxogastria0808/mock-filelist?tab=readme-ov-file#mock-filelistfilelist-example)!
 
 `image.ts`
 
