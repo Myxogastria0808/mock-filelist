@@ -83,6 +83,7 @@
     "filepond-plugin-image-preview": "^4.6.12",
     "globals": "^16.0.0",
     "happy-dom": "^17.4.6",
+    "msw": "^2.7.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-filepond": "^7.1.3",
