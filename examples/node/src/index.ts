@@ -1,18 +1,30 @@
-import { imageSchema, ImageSchemaType } from './lib/schema';
+import { imageUploadFetcher } from './lib/fetcher';
+import { ErrorResponse, OkResponse } from './lib/model';
+import { ImageSchemaType } from './lib/schema';
 import { LocalFileArrayBuilder } from '@mock-filelist/node';
+import { server } from './mock';
 
-const main = () => {
+// Call the `.listen` method to enable API mocking.
+server.listen();
+
+const main = async () => {
+  // create File[]
   const filelist: File[] = new LocalFileArrayBuilder()
     .addFile({ filePath: 'test_assets/sample.png', name: 'sample.png', mimeType: 'image/png' })
     .build();
-  const validInput: ImageSchemaType = {
+
+  // validate inputs
+  const inputs: ImageSchemaType = {
     image: filelist,
   };
-  const result = imageSchema.safeParse(validInput);
-  console.log('result: ' + result.success);
-  console.log('File[] length: ' + result.data?.image.length);
-  console.log('File[0] name: ' + result.data?.image[0].name);
-  console.log('File[0] type: ' + result.data?.image[0].type);
+
+  // upload image
+  const result: OkResponse | ErrorResponse = await imageUploadFetcher(inputs);
+
+  // show result
+  console.log('---Result (client)----------------');
+  console.dir(result);
+  console.log('----------------------------------');
 };
 
 main();

@@ -1,9 +1,9 @@
 import { z } from 'zod';
 
 //Acceptable MIME types
-const ACCEPT_MIME_TYPES = ['image/png', 'image/jpeg', 'image/webp'];
+const ACCEPT_MIME_TYPES: string[] = ['image/png', 'image/jpeg', 'image/webp'];
 //Allowable file size
-const MAX_SIZE = 1024 * 1024 * 100; //100MB
+const MAX_SIZE: number = 1024 * 1024 * 100; //100MB
 
 const imageSchema = z.object({
   image: z

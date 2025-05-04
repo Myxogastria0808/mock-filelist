@@ -25,6 +25,7 @@
   "devDependencies": {
     "@mock-filelist/node": "workspace:*",
     "@types/node": "catalog:commonjs",
+    "msw": "catalog:",
     "tsup": "catalog:",
     "typescript": "catalog:",
     "vitest": "catalog:"
