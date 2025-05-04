@@ -16,7 +16,7 @@ When you want to test against a `zod` schema (zod: validation library) with `vit
 
 When you use `@mock-filelist/filelist` or `@mock-filelist/browser`, you have to add the settings to `vite.config.ts` at first.
 
-`vite.config.ts`
+### `vite.config.ts`
 
 ```typescript
 /// <reference types="vitest" />
@@ -36,7 +36,7 @@ export default defineConfig({
 
 If you create zod schema like this, you can use `@mock-filelist/filelist` or `@mock-filelist/browser` like [under the example](https://github.com/Myxogastria0808/mock-filelist?tab=readme-ov-file#mock-filelistfilelist-example)!
 
-`image.ts`
+### `image.ts`
 
 ```typescript
 import { z } from 'zod';
@@ -75,7 +75,7 @@ This simple example depends on `vitest` and `happy-dom` (happy-dom: a javascript
 
 If you want to see the complete sourcecode of example project, look [this](https://github.com/Myxogastria0808/mock-filelist/tree/main/examples/filelist/).
 
-`image.test.ts`
+### `image.test.ts`
 
 ```typescript
 import { describe, expect, test } from 'vitest';
