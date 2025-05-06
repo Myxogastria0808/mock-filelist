@@ -5,7 +5,7 @@ describe('helper function test', () => {
   test.concurrent('buildFile function test (input File object)', () => {
     const file: File = new File([''], 'sample.txt', { type: 'text/plain' });
     const result: File = buildFile(file);
-    expect(result).toBeInstanceOf(File);
+    expectTypeOf(file).toEqualTypeOf<File>();
   });
   test.concurrent('buildFile function test (input undefine object)', () => {
     expect(() => buildFile(undefined)).toThrowError('File is not defined.');
@@ -20,18 +20,18 @@ describe('helper function test', () => {
   });
   test.concurrent('localFileSourceConverter function test (input LocalFileSource object)', () => {
     const file: File = localFileSourceConverter({
-      filePath: 'test_assets/sample.png',
-      mimeType: 'image/png',
-      name: 'sample.png',
+      name: 'sample.txt',
+      mimeType: 'text/plain',
+      filePath: 'test_assets/sample.txt',
     });
-    expect(file).toBeInstanceOf(File);
+    expectTypeOf(file).toEqualTypeOf<File>();
   });
   test.concurrent('remoteFileSourceConverter function test (input RemoteFileSource object)', async () => {
     const file: File = await remoteFileSourceConverter({
-      url: 'https://pub-5d8c638a3a5f4474b17d2a501dae7b3b.r2.dev/sample.png',
-      mimeType: 'image/png',
       name: 'sample.png',
+      mimeType: 'image/png',
+      url: 'https://pub-5d8c638a3a5f4474b17d2a501dae7b3b.r2.dev/sample.png',
     });
-    expect(file).toBeInstanceOf(File);
+    expectTypeOf(file).toEqualTypeOf<File>();
   });
 });
