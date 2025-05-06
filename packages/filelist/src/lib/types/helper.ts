@@ -31,7 +31,9 @@ export const remoteFileSourceConverter = async (source: RemoteFileSource): Promi
   const object = await fetch(source.url)
     .then((response) => {
       if (!response.ok) {
-        throw new Error(`Failed to fetch ${source.url}: ${response.status} ${response.statusText}`);
+        throw new Error(
+          `Failed to fetch url: ${source.url}, status: ${response.status}, message: ${response.statusText}.`
+        );
       }
       return response.blob();
     })
@@ -39,7 +41,7 @@ export const remoteFileSourceConverter = async (source: RemoteFileSource): Promi
       return new File([blob], source.name, { type: source.mimeType });
     })
     .catch((error) => {
-      throw new Error(`Error converting remote file: ${error.message}`);
+      throw new Error(`Failed converting remote file ${error.message}.`);
     });
   return object;
 };
