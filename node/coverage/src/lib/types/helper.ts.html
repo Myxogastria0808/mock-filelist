@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">13.33% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/30</span>
+                <span class='fraction'>4/30</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>0/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">13.33% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/30</span>
+                <span class='fraction'>4/30</span>
             </div>
         
             
@@ -100,20 +100,11 @@
 <a name='L35'></a><a href='#L35'>35</a>
 <a name='L36'></a><a href='#L36'>36</a>
 <a name='L37'></a><a href='#L37'>37</a>
-<a name='L38'></a><a href='#L38'>38</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<a name='L38'></a><a href='#L38'>38</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -121,6 +112,16 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -136,12 +137,11 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import { readFileSync } from 'fs';<span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" ></span></span></span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { readFileSync } from 'fs';
 import { LocalFileSource, RemoteFileSource } from './args';
 &nbsp;
 /* Build Helper Function */
-<span class="cstat-no" title="statement not covered" >export const buildFile = (file: File | undefined): File =&gt; {</span>
+export const buildFile = <span class="fstat-no" title="function not covered" >(file: File | undefined): File =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >  if (typeof file === 'undefined') {</span>
 <span class="cstat-no" title="statement not covered" >    throw new Error('File is not defined');</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
@@ -149,7 +149,7 @@ import { LocalFileSource, RemoteFileSource } from './args';
 <span class="cstat-no" title="statement not covered" >};</span>
 &nbsp;
 /* Local Class Helper Function */
-<span class="cstat-no" title="statement not covered" >export const localFileSourceConverter = (file: LocalFileSource): File =&gt; {</span>
+export const localFileSourceConverter = <span class="fstat-no" title="function not covered" >(file: LocalFileSource): File =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >  const buffer = readFileSync(file.filePath);</span>
 <span class="cstat-no" title="statement not covered" >  const blob = new Blob([buffer], { type: file.mimeType });</span>
 <span class="cstat-no" title="statement not covered" >  return new File([blob], file.name, {</span>
@@ -158,7 +158,7 @@ import { LocalFileSource, RemoteFileSource } from './args';
 <span class="cstat-no" title="statement not covered" >};</span>
 &nbsp;
 /* Remote Class Helper Function */
-<span class="cstat-no" title="statement not covered" >export const remoteFileSourceConverter = async (source: RemoteFileSource): Promise&lt;File&gt; =&gt; {</span>
+export const remoteFileSourceConverter = <span class="fstat-no" title="function not covered" >async (source: RemoteFileSource): Promise&lt;File&gt; =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >  const object = await fetch(source.url)</span>
 <span class="cstat-no" title="statement not covered" >    .then((response) =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >      if (!response.ok) {</span>
@@ -181,7 +181,7 @@ import { LocalFileSource, RemoteFileSource } from './args';
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-05-04T06:32:22.347Z
+                at 2025-05-06T17:47:14.319Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

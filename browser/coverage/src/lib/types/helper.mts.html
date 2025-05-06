@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">10.34% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/29</span>
+                <span class='fraction'>3/29</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>1/1</span>
-            </div>
-        
-            
-            <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
-                <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/3</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">10.34% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/29</span>
+                <span class='fraction'>3/29</span>
             </div>
         
             
@@ -101,6 +101,14 @@
 <a name='L36'></a><a href='#L36'>36</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -108,16 +116,8 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -136,14 +136,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { RemoteFileSource } from './args.mjs';
 &nbsp;
 /* Build Helper Function */
-<span class="cstat-no" title="statement not covered" >export const buildFile = (file: File | undefined): File =&gt; {</span>
+export const buildFile = <span class="fstat-no" title="function not covered" >(file: File | undefined): File =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >  if (typeof file === 'undefined') {</span>
 <span class="cstat-no" title="statement not covered" >    throw new Error('File is not defined');</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
 <span class="cstat-no" title="statement not covered" >  return file;</span>
 <span class="cstat-no" title="statement not covered" >};</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >export const buildFileList = (files: File[]): FileList =&gt; {</span>
+export const buildFileList = <span class="fstat-no" title="function not covered" >(files: File[]): FileList =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >  const dataTransfer = new DataTransfer();</span>
 <span class="cstat-no" title="statement not covered" >  for (const file of files) {</span>
 <span class="cstat-no" title="statement not covered" >    dataTransfer.items.add(file);</span>
@@ -152,7 +152,7 @@
 <span class="cstat-no" title="statement not covered" >};</span>
 &nbsp;
 /* Remote Class Helper Function */
-<span class="cstat-no" title="statement not covered" >export const remoteFileSourceConverter = async (source: RemoteFileSource): Promise&lt;File&gt; =&gt; {</span>
+export const remoteFileSourceConverter = <span class="fstat-no" title="function not covered" >async (source: RemoteFileSource): Promise&lt;File&gt; =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >  const object = await fetch(source.url)</span>
 <span class="cstat-no" title="statement not covered" >    .then((response) =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >      if (!response.ok) {</span>
@@ -175,7 +175,7 @@
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-05-04T06:32:22.631Z
+                at 2025-05-06T17:47:14.766Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>
