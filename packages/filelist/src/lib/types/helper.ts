@@ -4,7 +4,7 @@ import { LocalFileSource, RemoteFileSource } from './args';
 /* Build Helper Function */
 export const buildFile = (file: File | undefined): File => {
   if (typeof file === 'undefined') {
-    throw new Error('File is not defined');
+    throw new Error('File is not defined.');
   }
   return file;
 };
