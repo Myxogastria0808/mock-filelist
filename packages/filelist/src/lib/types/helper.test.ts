@@ -1,5 +1,9 @@
 import { describe, expect, expectTypeOf, test } from 'vitest';
 import { buildFile, buildFileList, localFileSourceConverter, remoteFileSourceConverter } from './helper';
+import { server } from '../../../mock';
+
+// Call the `.listen` method to enable API mocking.
+server.listen();
 
 describe('helper function test', () => {
   test.concurrent('buildFile function test (input File object)', () => {
@@ -28,10 +32,34 @@ describe('helper function test', () => {
   });
   test.concurrent('remoteFileSourceConverter function test (input RemoteFileSource object)', async () => {
     const file: File = await remoteFileSourceConverter({
-      name: 'sample.png',
-      mimeType: 'image/png',
-      url: 'https://pub-5d8c638a3a5f4474b17d2a501dae7b3b.r2.dev/sample.png',
+      name: 'sample.txt',
+      mimeType: 'text/plain',
+      url: 'http://localhost:3000/api/success/',
     });
     expectTypeOf(file).toEqualTypeOf<File>();
+  });
+  test.concurrent('remoteFileSourceConverter function test (server error)', async () => {
+    expect(
+      async () =>
+        await remoteFileSourceConverter({
+          name: 'sample.txt',
+          mimeType: 'text/plain',
+          url: 'http://localhost:3000/api/server/error/',
+        })
+    ).rejects.toThrowError(
+      'Failed to fetch url: http://localhost:3000/api/server/error/, status: 500, statusText: Internal Server Error.'
+    );
+  });
+  test.concurrent('remoteFileSourceConverter function test (client error)', async () => {
+    expect(
+      async () =>
+        await remoteFileSourceConverter({
+          name: 'sample.txt',
+          mimeType: 'text/plain',
+          url: 'http://localhost:3000/api/client/error/',
+        })
+    ).rejects.toThrowError(
+      'Failed to fetch url: http://localhost:3000/api/client/error/, status: 400, statusText: Bad Request.'
+    );
   });
 });
