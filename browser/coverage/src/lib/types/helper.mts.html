@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">10.71% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>3/28</span>
+                <span class='fraction'>28/28</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>11/11</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/3</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">10.71% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>3/28</span>
+                <span class='fraction'>28/28</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -101,70 +101,70 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">19x</span>
+<span class="cline-any cline-yes">19x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { RemoteFileSource } from './args.mjs';
 &nbsp;
 /* Build Helper Function */
-export const buildFile = <span class="fstat-no" title="function not covered" >(file: File | undefined): File =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  if (typeof file === 'undefined') {</span>
-<span class="cstat-no" title="statement not covered" >    throw new Error('File is not defined');</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
-<span class="cstat-no" title="statement not covered" >  return file;</span>
-<span class="cstat-no" title="statement not covered" >};</span>
+export const buildFile = (file: File | undefined): File =&gt; {
+  if (typeof file === 'undefined') {
+    throw new Error('File is not defined.');
+  }
+  return file;
+};
 &nbsp;
-export const buildFileList = <span class="fstat-no" title="function not covered" >(files: File[]): FileList =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  const dataTransfer = new DataTransfer();</span>
-<span class="cstat-no" title="statement not covered" >  for (const file of files) {</span>
-<span class="cstat-no" title="statement not covered" >    dataTransfer.items.add(file);</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
-<span class="cstat-no" title="statement not covered" >  return dataTransfer.files;</span>
-<span class="cstat-no" title="statement not covered" >};</span>
+export const buildFileList = (files: File[]): FileList =&gt; {
+  const dataTransfer = new DataTransfer();
+  for (const file of files) {
+    dataTransfer.items.add(file);
+  }
+  return dataTransfer.files;
+};
 &nbsp;
 /* Remote Class Helper Function */
-export const remoteFileSourceConverter = <span class="fstat-no" title="function not covered" >async (source: RemoteFileSource): Promise&lt;File&gt; =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  const object = await fetch(source.url)</span>
-<span class="cstat-no" title="statement not covered" >    .then((response) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >      if (!response.ok) {</span>
-<span class="cstat-no" title="statement not covered" >        throw new Error(</span>
-<span class="cstat-no" title="statement not covered" >          `Failed to fetch url: ${source.url}, status: ${response.status}, statusText: ${response.statusText}.`</span>
-<span class="cstat-no" title="statement not covered" >        );</span>
-<span class="cstat-no" title="statement not covered" >      }</span>
-<span class="cstat-no" title="statement not covered" >      return response.blob();</span>
-<span class="cstat-no" title="statement not covered" >    })</span>
-<span class="cstat-no" title="statement not covered" >    .then((blob) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >      return new File([blob], source.name, { type: source.mimeType });</span>
-<span class="cstat-no" title="statement not covered" >    });</span>
-<span class="cstat-no" title="statement not covered" >  return object;</span>
-<span class="cstat-no" title="statement not covered" >};</span>
+export const remoteFileSourceConverter = async (source: RemoteFileSource): Promise&lt;File&gt; =&gt; {
+  const object = await fetch(source.url)
+    .then((response) =&gt; {
+      if (!response.ok) {
+        throw new Error(
+          `Failed to fetch url: ${source.url}, status: ${response.status}, statusText: ${response.statusText}.`
+        );
+      }
+      return response.blob();
+    })
+    .then((blob) =&gt; {
+      return new File([blob], source.name, { type: source.mimeType });
+    });
+  return object;
+};
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -172,7 +172,7 @@ export const remoteFileSourceConverter = <span class="fstat-no" title="function 
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-05-09T15:17:25.811Z
+                at 2025-05-09T15:42:11.360Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>
