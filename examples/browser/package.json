@@ -36,6 +36,7 @@
     "eslint": "catalog:examples",
     "eslint-plugin-react-hooks": "catalog:examples",
     "eslint-plugin-react-refresh": "catalog:examples",
+    "msw": "catalog:",
     "globals": "catalog:examples",
     "happy-dom": "catalog:esmodules",
     "typescript": "catalog:",
