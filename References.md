@@ -40,3 +40,7 @@ https://zenn.dev/makotot/articles/5edb504ef7d2e6
 ### async / await
 
 https://zenn.dev/umibudou/articles/19237538b2cab1
+
+### organization account of npm
+
+https://qiita.com/zprodev/items/a257510899e7f13c0b56#11-%E5%80%8B%E4%BA%BA%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E7%94%A8%E6%84%8F
