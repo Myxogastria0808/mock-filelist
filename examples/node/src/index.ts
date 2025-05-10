@@ -2,7 +2,7 @@ import { imageUploadFetcher } from './lib/fetcher';
 import { ErrorResponse, OkResponse } from './lib/model';
 import { ImageSchemaType } from './lib/schema';
 import { LocalFileArrayBuilder } from '@mock-filelist/node';
-import { server } from './mock';
+import { server } from '../mock';
 
 // Call the `.listen` method to enable API mocking.
 server.listen();

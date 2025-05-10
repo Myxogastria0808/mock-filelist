@@ -4,8 +4,5 @@
     "module": "NodeNext",
     "moduleResolution": "nodenext",
     "baseUrl": "../../",
-    "paths": {
-      "@mock-filelist/core": ["packages/node/dist/index.d.ts"],
-    }
   }
 }
