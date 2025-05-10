@@ -18,19 +18,22 @@ jobs:
         uses: cachix/install-nix-action@v31
         with:
           nix_path: nixpkgs=channel:nixpkgs-unstable
+      # Build Docusaurus
+      - name: Build Docusaurus
+        run: nix develop --command bash -c "pnpm i && pnpm docs:build"
       # Build Typedoc
       - name: Build Typedoc
         run: nix develop --command bash -c "pnpm i && pnpm typedoc"
       # Move Typedoc Reposrt
       - name: Move Typedoc Report (@mock-filelist/browser)
         run: |
-          mv ./packages/browser/typedoc/ ./docs/browser/
+          mv ./packages/browser/typedoc/ ./docs/build/browser/
       - name: Move Typedoc Report (@mock-filelist/filelist)
         run: |
-          mv ./packages/filelist/typedoc/ ./docs/filelist/
+          mv ./packages/filelist/typedoc/ ./docs/build/filelist/
       - name: Move Typedoc Report (@mock-filelist/node)
         run: |
-          mv ./packages/node/typedoc/ ./docs/node/
+          mv ./packages/node/typedoc/ ./docs/build/node/
       #  Build Vitest UI
       - name: Build Vitest UI (@vitest/ui)
         id: vitest
@@ -39,13 +42,13 @@ jobs:
       # Move Vitest UI Report
       - name: Move Vitest UI Report (@mock-filelist/browser)
         run: |
-          mv ./packages/browser/html/ ./docs/browser/vitest/
+          mv ./packages/browser/html/ ./docs/build/browser/vitest/
       - name: Move Vitest UI Report (@mock-filelist/filelist)
         run: |
-          mv ./packages/filelist/html/ ./docs/filelist/vitest/
+          mv ./packages/filelist/html/ ./docs/build/filelist/vitest/
       - name: Move Vitest UI Report (@mock-filelist/node)
         run: |
-          mv ./packages/node/html/ ./docs/node/vitest/
+          mv ./packages/node/html/ ./docs/build/node/vitest/
       # Build Vitest Coverage
       - name: Build Vitest Coverate (@vitest/coverage-v8)
         continue-on-error: true  
@@ -54,21 +57,21 @@ jobs:
       - name: Move Vitest Coverage Report (@mock-filelist/browser)
         continue-on-error: true
         run: |
-          mv ./packages/browser/coverage/ ./docs/browser/coverage/
+          mv ./packages/browser/coverage/ ./docs/build/browser/coverage/
       - name: Move Vitest Coverage Report (@mock-filelist/filelist)
         continue-on-error: true
         run: |
-          mv ./packages/filelist/coverage/ ./docs/filelist/coverage/
+          mv ./packages/filelist/coverage/ ./docs/build/filelist/coverage/
       - name: Move Vitest Coverage Report (@mock-filelist/node)
         continue-on-error: true
         run: |
-          mv ./packages/node/coverage/ ./docs/node/coverage/
+          mv ./packages/node/coverage/ ./docs/build/node/coverage/
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+          publish_dir: ./docs/build
       # Test Result
       - name: If Failed Test, exit 1
         if: steps.vitest.outcome == 'failure'

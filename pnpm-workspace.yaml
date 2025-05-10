@@ -1,6 +1,7 @@
 packages:
   - 'packages/*'
   - 'examples/*'
+  - 'docs/*'
 
 # common dependencies
 catalog:
@@ -25,10 +26,12 @@ catalogs:
     happy-dom: ^17.4.6
   commonjs:
     "@types/node":  ^22.15.3
-  examples:
-    # filelist & browser
+  react:
+    # filelist & browser & docs
     react: ^19.0.0
     react-dom: ^19.0.0
+  examples:
+    # filelist & browser
     "@eslint/js": ^9.22.0
     "@types/react": ^19.0.10
     "@types/react-dom": ^19.0.4
@@ -47,3 +50,12 @@ catalogs:
     react-filepond: ^7.1.3
     react-hook-form: ^7.56.1
     styled-components: ^6.1.17
+  docs:
+    "@docusaurus/core": ^3.7.0
+    "@docusaurus/preset-classic": ^3.7.0
+    "@mdx-js/react": ^3.1.0
+    clsx: ^2.1.1
+    prism-react-renderer: ^2.4.1
+    "@docusaurus/module-type-aliases": ^3.7.0
+    "@docusaurus/tsconfig": ^3.7.0
+    "@docusaurus/types": ^3.7.0
