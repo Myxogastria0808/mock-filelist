@@ -201,6 +201,10 @@ https://myxogastria0808.github.io/mock-filelist/node/
 
 https://github.com/Myxogastria0808/mock-filelist/blob/main/packages/node/README.md
 
+### Example (Mock Service Worker + Vitest)
+
+https://github.com/Myxogastria0808/mock-filelist/blob/main/examples/node/
+
 ---
 
 ## DeepWiki

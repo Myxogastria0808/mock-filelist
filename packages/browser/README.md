@@ -61,11 +61,14 @@ This package is a mock generator of FileList and File type object for ES Modules
     </tbody>
 </table>
 
+> [!WARNING]
+> If you use `jsdom` instead of `happy-dom`, you **cannot** use `@mock-filelist/filelist` and `@mock-filelist/browser`.
+
 ## HTML Documentation
 
 https://myxogastria0808.github.io/mock-filelist/browser/
 
-### Example (React + Vitest + **happy-dom**)
+## Example (React + Vitest + **happy-dom**)
 
 https://github.com/Myxogastria0808/mock-filelist/blob/main/examples/browser/
 
