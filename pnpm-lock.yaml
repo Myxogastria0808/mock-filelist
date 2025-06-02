@@ -221,7 +221,7 @@ importers:
         version: 3.1.2(@types/debug@4.1.12)(@types/node@22.15.29)(@vitest/ui@3.1.2)(happy-dom@17.4.6)(jiti@1.21.7)(jsdom@26.1.0)(msw@2.7.5(@types/node@22.15.29)(typescript@5.8.3))(terser@5.39.0)(yaml@2.7.1)
       zod:
         specifier: ^3.24.3
-        version: 3.24.3
+        version: 3.25.48
 
   examples/browser:
     dependencies:
@@ -6840,6 +6840,9 @@ packages:
 
   zod@3.24.3:
     resolution: {integrity: sha512-HhY1oqzWCQWuUqvBFnsyrtZRhyPeR7SUGv+C4+MsisMuVfSPx8HpwWqH8tRahSlt6M3PiFAcoeFhZAqIXTxoSg==}
+
+  zod@3.25.48:
+    resolution: {integrity: sha512-0X1mz8FtgEIvaxGjdIImYpZEaZMrund9pGXm3M6vM7Reba0e2eI71KPjSCGXBfwKDPwPoywf6waUKc3/tFvX2Q==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -14857,5 +14860,7 @@ snapshots:
   yoctocolors-cjs@2.1.2: {}
 
   zod@3.24.3: {}
+
+  zod@3.25.48: {}
 
   zwitch@2.0.4: {}
