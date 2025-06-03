@@ -1,43 +1,43 @@
 import { BlobFileSource, LocalFileSource, RemoteFileSource } from './args';
 
-export interface LocalFileListBuilderType {
-  addBlob(file: BlobFileSource): this;
-  addBlobs(files: BlobFileSource[]): this;
-  addFile(file: LocalFileSource): this;
-  addFiles(files: LocalFileSource[]): this;
-  addFileObject(file: File): this;
-  addFileObjects(files: File[]): this;
+export type LocalFileListBuilderType = {
+  addBlob(file: BlobFileSource): LocalFileListBuilderType;
+  addBlobs(files: BlobFileSource[]): LocalFileListBuilderType;
+  addFile(file: LocalFileSource): LocalFileListBuilderType;
+  addFiles(files: LocalFileSource[]): LocalFileListBuilderType;
+  addFileObject(file: File): LocalFileListBuilderType;
+  addFileObjects(files: File[]): LocalFileListBuilderType;
   build(): FileList;
   buildFileArray(): File[];
-}
+};
 
-export interface RemoteFileListBuilderType {
-  addBlob(file: BlobFileSource): this;
-  addBlobs(files: BlobFileSource[]): this;
-  addFile(file: RemoteFileSource): Promise<this>;
-  addFiles(files: RemoteFileSource[]): Promise<this>;
-  addFileObject(file: File): this;
-  addFileObjects(files: File[]): this;
-  build(): FileList;
-  buildFileArray(): File[];
-}
+export type RemoteFileListBuilderType = {
+  addBlob(file: BlobFileSource): RemoteFileListBuilderType;
+  addBlobs(files: BlobFileSource[]): RemoteFileListBuilderType;
+  addFile(file: RemoteFileSource): RemoteFileListBuilderType;
+  addFiles(files: RemoteFileSource[]): RemoteFileListBuilderType;
+  addFileObject(file: File): RemoteFileListBuilderType;
+  addFileObjects(files: File[]): RemoteFileListBuilderType;
+  build(): Promise<FileList>;
+  buildFileArray(): Promise<File[]>;
+};
 
-export interface LocalFileBuilderType {
-  addBlob(file: BlobFileSource): this;
-  addFile(file: LocalFileSource): this;
-  addFileObject(file: File): this;
+export type LocalFileBuilderType = {
+  addBlob(file: BlobFileSource): LocalFileBuilderType;
+  addFile(file: LocalFileSource): LocalFileBuilderType;
+  addFileObject(file: File): LocalFileBuilderType;
   build(): File;
-}
+};
 
-export interface RemoteFileBuilderType {
-  addBlob(file: BlobFileSource): this;
-  addFile(file: RemoteFileSource): Promise<this>;
-  addFileObject(file: File): this;
-  build(): File;
-}
+export type RemoteFileBuilderType = {
+  addBlob(file: BlobFileSource): RemoteFileBuilderType;
+  addFile(file: RemoteFileSource): RemoteFileBuilderType;
+  addFileObject(file: File): RemoteFileBuilderType;
+  build(): Promise<File>;
+};
 
-export interface MergeFileListBuilderType {
-  addFileObjects(files: Iterable<File>): this;
+export type MergeFileListBuilderType = {
+  addFileObjects(files: Iterable<File>): MergeFileListBuilderType;
   build(): FileList;
   buildFileArray(): File[];
-}
+};

@@ -2,15 +2,17 @@ import { describe, expect, expectTypeOf, test } from 'vitest';
 import { RemoteFileListBuilder, RemoteFileBuilder } from './remote.mjs';
 
 describe('RemoteFileListBuilder test', () => {
-  test.concurrent('addBlob() method test', () => {
-    const remoteFileListBuilderSample: FileList = new RemoteFileListBuilder()
+  test.concurrent('addBlob() method test', async () => {
+    const builder = new RemoteFileListBuilder();
+    const remoteFileListBuilderSample: FileList = await builder
       .addBlob({
         name: 'sample.txt',
         mimeType: 'text/plain',
         blob: new Blob(['Hello, World!']),
       })
       .build();
-    const remoteFileListBuilderArraySample: File[] = new RemoteFileListBuilder()
+    const builder2 = new RemoteFileListBuilder();
+    const remoteFileListBuilderArraySample: File[] = await builder2
       .addBlob({
         name: 'sample.txt',
         mimeType: 'text/plain',
@@ -21,8 +23,9 @@ describe('RemoteFileListBuilder test', () => {
     expectTypeOf(remoteFileListBuilderSample).toEqualTypeOf<FileList>();
     expectTypeOf(remoteFileListBuilderArraySample).toEqualTypeOf<File[]>();
   });
-  test.concurrent('addBlobs() method test', () => {
-    const remoteFileListBuilderSample: FileList = new RemoteFileListBuilder()
+  test.concurrent('addBlobs() method test', async () => {
+    const builder = new RemoteFileListBuilder();
+    const remoteFileListBuilderSample: FileList = await builder
       .addBlobs([
         {
           name: 'sample.txt',
@@ -36,7 +39,8 @@ describe('RemoteFileListBuilder test', () => {
         },
       ])
       .build();
-    const remoteFileListBuilderArraySample: File[] = new RemoteFileListBuilder()
+    const builder2 = new RemoteFileListBuilder();
+    const remoteFileListBuilderArraySample: File[] = await builder2
       .addBlobs([
         {
           name: 'sample.txt',
@@ -55,27 +59,30 @@ describe('RemoteFileListBuilder test', () => {
     expectTypeOf(remoteFileListBuilderArraySample).toEqualTypeOf<File[]>();
   });
   test.concurrent('addFile() method test', async () => {
-    const remoteFileListBuilderSample: FileList = (
-      await new RemoteFileListBuilder().addFile({
+    const builder = new RemoteFileListBuilder();
+    const remoteFileListBuilderSample: FileList = await builder
+      .addFile({
         name: 'sample.txt',
         mimeType: 'text/plain',
         url: 'http://localhost:3000/api/success/',
       })
-    ).build();
-    const remoteFileListBuilderArraySample: File[] = (
-      await new RemoteFileListBuilder().addFile({
+      .build();
+    const builder2 = new RemoteFileListBuilder();
+    const remoteFileListBuilderArraySample: File[] = await builder2
+      .addFile({
         name: 'sample.txt',
         mimeType: 'text/plain',
         url: 'http://localhost:3000/api/success/',
       })
-    ).buildFileArray();
+      .buildFileArray();
     expect(remoteFileListBuilderArraySample).toBeInstanceOf(Array);
     expectTypeOf(remoteFileListBuilderSample).toEqualTypeOf<FileList>();
     expectTypeOf(remoteFileListBuilderArraySample).toEqualTypeOf<File[]>();
   });
   test.concurrent('addFiles() method test', async () => {
-    const remoteFileListBuilderSample: FileList = (
-      await new RemoteFileListBuilder().addFiles([
+    const builder = new RemoteFileListBuilder();
+    const remoteFileListBuilderSample: FileList = await builder
+      .addFiles([
         {
           name: 'sample.txt',
           mimeType: 'text/plain',
@@ -87,9 +94,10 @@ describe('RemoteFileListBuilder test', () => {
           url: 'http://localhost:3000/api/success/',
         },
       ])
-    ).build();
-    const remoteFileListBuilderArraySample: File[] = (
-      await new RemoteFileListBuilder().addFiles([
+      .build();
+    const builder2 = new RemoteFileListBuilder();
+    const remoteFileListBuilderArraySample: File[] = await builder2
+      .addFiles([
         {
           name: 'sample.txt',
           mimeType: 'text/plain',
@@ -101,26 +109,30 @@ describe('RemoteFileListBuilder test', () => {
           url: 'http://localhost:3000/api/success/',
         },
       ])
-    ).buildFileArray();
+      .buildFileArray();
     expect(remoteFileListBuilderArraySample).toBeInstanceOf(Array);
     expectTypeOf(remoteFileListBuilderSample).toEqualTypeOf<FileList>();
     expectTypeOf(remoteFileListBuilderArraySample).toEqualTypeOf<File[]>();
   });
-  test.concurrent('addFileObject() method test', () => {
+  test.concurrent('addFileObject() method test', async () => {
+    const builder = new RemoteFileListBuilder();
     let file: File = new File(['Hello, World!'], 'sample.txt', { type: 'text/plain' });
-    const remoteFileListBuilderSample: FileList = new RemoteFileListBuilder().addFileObject(file).build();
-    const remoteFileListBuilderArraySample: File[] = new RemoteFileListBuilder().addFileObject(file).buildFileArray();
+    const remoteFileListBuilderSample: FileList = await builder.addFileObject(file).build();
+    const builder2 = new RemoteFileListBuilder();
+    const remoteFileListBuilderArraySample: File[] = await builder2.addFileObject(file).buildFileArray();
     expect(remoteFileListBuilderArraySample).toBeInstanceOf(Array);
     expectTypeOf(remoteFileListBuilderSample).toEqualTypeOf<FileList>();
     expectTypeOf(remoteFileListBuilderArraySample).toEqualTypeOf<File[]>();
   });
-  test.concurrent('addFileObjects() method test', () => {
+  test.concurrent('addFileObjects() method test', async () => {
     const files: File[] = [
       new File(['Hello, World!'], 'sample.txt', { type: 'text/plain' }),
       new File(['Hello, World!'], 'sample2.txt', { type: 'text/plain' }),
     ];
-    const remoteFileListBuilderSample: FileList = new RemoteFileListBuilder().addFileObjects(files).build();
-    const remoteFileListBuilderArraySample: File[] = new RemoteFileListBuilder().addFileObjects(files).buildFileArray();
+    const builder = new RemoteFileListBuilder();
+    const remoteFileListBuilderSample: FileList = await builder.addFileObjects(files).build();
+    const builder2 = new RemoteFileListBuilder();
+    const remoteFileListBuilderArraySample: File[] = await builder2.addFileObjects(files).buildFileArray();
     expect(remoteFileListBuilderArraySample).toBeInstanceOf(Array);
     expectTypeOf(remoteFileListBuilderSample).toEqualTypeOf<FileList>();
     expectTypeOf(remoteFileListBuilderArraySample).toEqualTypeOf<File[]>();
@@ -128,8 +140,9 @@ describe('RemoteFileListBuilder test', () => {
 });
 
 describe('RemoteFileBuilder test', () => {
-  test.concurrent('addBlob() method test', () => {
-    const remoteFileBuilderSample: File = new RemoteFileBuilder()
+  test.concurrent('addBlob() method test', async () => {
+    const builder = new RemoteFileBuilder();
+    const remoteFileBuilderSample: File = await builder
       .addBlob({
         name: 'sample.txt',
         mimeType: 'text/plain',
@@ -140,19 +153,21 @@ describe('RemoteFileBuilder test', () => {
     expectTypeOf(remoteFileBuilderSample).toEqualTypeOf<File>();
   });
   test.concurrent('addFile() method test', async () => {
-    const remoteFileBuilderSample: File = (
-      await new RemoteFileBuilder().addFile({
+    const builder = new RemoteFileBuilder();
+    const remoteFileBuilderSample: File = await builder
+      .addFile({
         name: 'sample.txt',
         mimeType: 'text/plain',
         url: 'http://localhost:3000/api/success/',
       })
-    ).build();
+      .build();
     expect(remoteFileBuilderSample).toBeInstanceOf(File);
     expectTypeOf(remoteFileBuilderSample).toEqualTypeOf<File>();
   });
   test.concurrent('addFileObject() method test', async () => {
+    const builder = new RemoteFileBuilder();
     const file: File = new File(['Hello, World!'], 'sample.txt', { type: 'text/plain' });
-    const localFileBuilderSample: File = new RemoteFileBuilder().addFileObject(file).build();
+    const localFileBuilderSample: File = await builder.addFileObject(file).build();
     expect(localFileBuilderSample).toBeInstanceOf(File);
     expectTypeOf(localFileBuilderSample).toEqualTypeOf<File>();
   });

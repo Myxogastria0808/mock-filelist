@@ -1,25 +1,25 @@
-import { BlobFileSource, RemoteFileSource } from './args.mjs';
+import { BlobFileSource, RemoteFileSource } from './args.mts';
 
-export interface RemoteFileListBuilderType {
-  addBlob(file: BlobFileSource): this;
-  addBlobs(files: BlobFileSource[]): this;
-  addFile(file: RemoteFileSource): Promise<this>;
-  addFiles(files: RemoteFileSource[]): Promise<this>;
-  addFileObject(file: File): this;
-  addFileObjects(files: File[]): this;
+export type RemoteFileListBuilderType = {
+  addBlob(file: BlobFileSource): RemoteFileListBuilderType;
+  addBlobs(files: BlobFileSource[]): RemoteFileListBuilderType;
+  addFile(file: RemoteFileSource): RemoteFileListBuilderType;
+  addFiles(files: RemoteFileSource[]): RemoteFileListBuilderType;
+  addFileObject(file: File): RemoteFileListBuilderType;
+  addFileObjects(files: File[]): RemoteFileListBuilderType;
+  build(): Promise<FileList>;
+  buildFileArray(): Promise<File[]>;
+};
+
+export type RemoteFileBuilderType = {
+  addBlob(file: BlobFileSource): RemoteFileBuilderType;
+  addFile(file: RemoteFileSource): RemoteFileBuilderType;
+  addFileObject(file: File): RemoteFileBuilderType;
+  build(): Promise<File>;
+};
+
+export type MergeFileListBuilderType = {
+  addFileObjects(files: Iterable<File>): MergeFileListBuilderType;
   build(): FileList;
   buildFileArray(): File[];
-}
-
-export interface RemoteFileBuilderType {
-  addBlob(file: BlobFileSource): this;
-  addFile(file: RemoteFileSource): Promise<this>;
-  addFileObject(file: File): this;
-  build(): File;
-}
-
-export interface MergeFileListBuilderType {
-  addFileObjects(files: Iterable<File>): this;
-  build(): FileList;
-  buildFileArray(): File[];
-}
+};

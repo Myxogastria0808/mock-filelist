@@ -8,13 +8,14 @@ server.listen();
 
 describe('Validation Test of imageSchema', () => {
   test.concurrent('Vaild Value', async () => {
-    let filelist: FileList = (
-      await new RemoteFileListBuilder().addFile({
+    let builder = new RemoteFileListBuilder();
+    const filelist = await builder
+      .addFile({
         name: 'sample.png',
         mimeType: 'image/png',
         url: 'http://localhost:3000/api/success/',
       })
-    ).build();
+      .build();
     const validInput: ImageSchemaType = {
       image: filelist,
     };

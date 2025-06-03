@@ -1,10 +1,10 @@
-import { BlobFileSource, RemoteFileSource } from './types/args.mjs';
-import { RemoteFileBuilderType, RemoteFileListBuilderType } from './types/builder.mjs';
-import { buildFile, buildFileList, remoteFileSourceConverter } from './types/helper.mjs';
+import { BlobFileSource, RemoteFileSource } from './types/args.mts';
+import { RemoteFileBuilderType, RemoteFileListBuilderType } from './types/builder.mts';
+import { buildFile, buildFileList, remoteFileSourceConverter } from './types/helper.mts';
 
 /* Remote Class */
 export class RemoteFileListBuilder implements RemoteFileListBuilderType {
-  private files: File[] = [];
+  private files: (Promise<File> | File)[] = [];
 
   addBlob(blob: BlobFileSource): this {
     const object = new File([blob.blob], blob.name, {
@@ -24,16 +24,14 @@ export class RemoteFileListBuilder implements RemoteFileListBuilderType {
     return this;
   }
 
-  async addFile(file: RemoteFileSource): Promise<this> {
-    const object = await remoteFileSourceConverter(file);
-    this.files.push(object);
+  addFile(file: RemoteFileSource): this {
+    this.files.push(remoteFileSourceConverter(file));
     return this;
   }
 
-  async addFiles(files: RemoteFileSource[]): Promise<this> {
+  addFiles(files: RemoteFileSource[]): this {
     for (const file of files) {
-      const object = await remoteFileSourceConverter(file);
-      this.files.push(object);
+      this.files.push(remoteFileSourceConverter(file));
     }
     return this;
   }
@@ -44,23 +42,23 @@ export class RemoteFileListBuilder implements RemoteFileListBuilderType {
   }
 
   addFileObjects(files: Iterable<File>): this {
-    for (const file of files) {
+    for (const file of Array.from(files)) {
       this.files.push(file);
     }
     return this;
   }
 
-  build(): FileList {
-    return buildFileList(this.files);
+  async build(): Promise<FileList> {
+    return buildFileList(await Promise.all(this.files));
   }
 
-  buildFileArray(): File[] {
-    return this.files;
+  async buildFileArray(): Promise<File[]> {
+    return await Promise.all(this.files);
   }
 }
 
 export class RemoteFileBuilder implements RemoteFileBuilderType {
-  private file: File | undefined;
+  private file: Promise<File> | File | undefined;
   constructor() {
     this.file = undefined;
   }
@@ -72,8 +70,8 @@ export class RemoteFileBuilder implements RemoteFileBuilderType {
     return this;
   }
 
-  async addFile(file: RemoteFileSource): Promise<this> {
-    this.file = await remoteFileSourceConverter(file);
+  addFile(file: RemoteFileSource): this {
+    this.file = remoteFileSourceConverter(file);
     return this;
   }
 
@@ -82,7 +80,7 @@ export class RemoteFileBuilder implements RemoteFileBuilderType {
     return this;
   }
 
-  build(): File {
-    return buildFile(this.file);
+  async build(): Promise<File> {
+    return buildFile(await this.file);
   }
 }

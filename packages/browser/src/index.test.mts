@@ -6,7 +6,7 @@ import {
   FileSourceBase,
   BlobFileSource,
   RemoteFileSource,
-} from './index.mjs';
+} from './index.mts';
 
 describe('export test', () => {
   test.concurrent('RemoteFileBuilder export test', () => {
