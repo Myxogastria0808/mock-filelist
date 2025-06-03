@@ -143,7 +143,7 @@ importers:
         version: 19.1.5(@types/react@19.1.6)
       '@vitejs/plugin-react-swc':
         specifier: ^3.10.0
-        version: 3.10.0(vite@6.3.5(@types/node@22.15.29)(jiti@1.21.7)(terser@5.40.0)(yaml@2.8.0))
+        version: 3.10.1(vite@6.3.5(@types/node@22.15.29)(jiti@1.21.7)(terser@5.40.0)(yaml@2.8.0))
       '@vitest/coverage-v8':
         specifier: ^3.1.4
         version: 3.2.0(vitest@3.2.0)
@@ -2510,6 +2510,11 @@ packages:
 
   '@vitejs/plugin-react-swc@3.10.0':
     resolution: {integrity: sha512-ZmkdHw3wo/o/Rk05YsXZs/DJAfY2CdQ5DUAjoWji+PEr+hYADdGMCGgEAILbiKj+CjspBTuTACBcWDrmC8AUfw==}
+    peerDependencies:
+      vite: ^4 || ^5 || ^6
+
+  '@vitejs/plugin-react-swc@3.10.1':
+    resolution: {integrity: sha512-FmQvN3yZGyD9XW6IyxE86Kaa/DnxSsrDQX1xCR1qojNpBLaUop+nLYFvhCkJsq8zOupNjCRA9jyhPGOJsSkutA==}
     peerDependencies:
       vite: ^4 || ^5 || ^6
 
@@ -9471,6 +9476,14 @@ snapshots:
   '@ungap/structured-clone@1.3.0': {}
 
   '@vitejs/plugin-react-swc@3.10.0(vite@6.3.5(@types/node@22.15.29)(jiti@1.21.7)(terser@5.40.0)(yaml@2.8.0))':
+    dependencies:
+      '@rolldown/pluginutils': 1.0.0-beta.9
+      '@swc/core': 1.11.29
+      vite: 6.3.5(@types/node@22.15.29)(jiti@1.21.7)(terser@5.40.0)(yaml@2.8.0)
+    transitivePeerDependencies:
+      - '@swc/helpers'
+
+  '@vitejs/plugin-react-swc@3.10.1(vite@6.3.5(@types/node@22.15.29)(jiti@1.21.7)(terser@5.40.0)(yaml@2.8.0))':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-beta.9
       '@swc/core': 1.11.29
