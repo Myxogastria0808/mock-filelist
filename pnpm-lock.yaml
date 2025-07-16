@@ -66,6 +66,9 @@ catalogs:
     eslint-plugin-react-refresh:
       specifier: ^0.4.19
       version: 0.4.20
+    filepond:
+      specifier: ^4.32.7
+      version: 4.32.8
     filepond-plugin-image-exif-orientation:
       specifier: ^1.0.11
       version: 1.0.11
@@ -217,8 +220,8 @@ importers:
         specifier: ^3.1.4
         version: 3.2.0(@types/debug@4.1.12)(@types/node@22.15.33)(@vitest/ui@3.2.0)(happy-dom@17.6.3)(jiti@1.21.7)(msw@2.8.7(@types/node@22.15.33)(typescript@5.8.3))(terser@5.40.0)(yaml@2.8.0)
       zod:
-        specifier: 3.24.3
-        version: 3.24.3
+        specifier: 3.25.76
+        version: 3.25.76
 
   examples/browser:
     dependencies:
@@ -6842,6 +6845,9 @@ packages:
 
   zod@3.24.3:
     resolution: {integrity: sha512-HhY1oqzWCQWuUqvBFnsyrtZRhyPeR7SUGv+C4+MsisMuVfSPx8HpwWqH8tRahSlt6M3PiFAcoeFhZAqIXTxoSg==}
+
+  zod@3.25.76:
+    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -14936,5 +14942,7 @@ snapshots:
   yoctocolors-cjs@2.1.2: {}
 
   zod@3.24.3: {}
+
+  zod@3.25.76: {}
 
   zwitch@2.0.4: {}
