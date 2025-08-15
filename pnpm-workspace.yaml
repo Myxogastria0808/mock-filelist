@@ -5,57 +5,57 @@ packages:
 
 # common dependencies
 catalog:
-  typescript: ^5.8.3
+  typescript: ^5.9.2
   # document generator
-  typedoc: ^0.28.3
+  typedoc: ^0.28.10
   # builder tool
-  tsup: ^8.4.0
+  tsup: ^8.5.0
   # vitest
-  vitest: ^3.1.2
-  "@vitest/coverage-v8": ^3.1.2
-  "@vitest/ui": ^3.1.2
+  vitest: ^3.2.4
+  "@vitest/coverage-v8": ^3.2.4
+  "@vitest/ui": ^3.2.4
   # depended on by vitest
-  zod: ^3.24.3
+  zod: ^4.0.17
   # depended on by vitest (fetch API)
-  msw: ^2.7.5
+  msw: ^2.10.5
 
 # specific dependencies
 catalogs:
   esmodules:
     # depended on by vitest
-    happy-dom: ^17.4.6
+    happy-dom: ^17.6.3
   commonjs:
-    "@types/node":  ^22.15.3
+    "@types/node":  ^22.17.1
   react:
     # filelist & browser & docs
-    react: ^19.0.0
-    react-dom: ^19.0.0
+    react: ^19.1.1
+    react-dom: ^19.1.1
   examples:
     # filelist & browser
-    "@eslint/js": ^9.22.0
-    "@types/react": ^19.0.10
-    "@types/react-dom": ^19.0.4
-    "@vitejs/plugin-react-swc": ^3.8.0
-    eslint: ^9.22.0
+    "@eslint/js": ^9.33.0
+    "@types/react": ^19.1.10
+    "@types/react-dom": ^19.1.7
+    "@vitejs/plugin-react-swc": ^3.11.0
+    eslint: ^9.33.0
     eslint-plugin-react-hooks: ^5.2.0
-    eslint-plugin-react-refresh: ^0.4.19
-    globals: ^16.0.0
-    typescript-eslint: ^8.26.1
-    vite: ^6.3.1
+    eslint-plugin-react-refresh: ^0.4.20
+    globals: ^16.3.0
+    typescript-eslint: ^8.39.1
+    vite: ^6.3.5
     "@hookform/error-message": ^2.0.1
-    "@hookform/resolvers": ^5.0.1
-    filepond: ^4.32.7
+    "@hookform/resolvers": ^5.2.1
+    filepond: ^4.32.8
     filepond-plugin-image-exif-orientation: ^1.0.11
     filepond-plugin-image-preview: ^4.6.12
     react-filepond: ^7.1.3
-    react-hook-form: ^7.56.1
-    styled-components: ^6.1.17
+    react-hook-form: ^7.62.0
+    styled-components: ^6.1.19
   docs:
-    "@docusaurus/core": ^3.7.0
-    "@docusaurus/preset-classic": ^3.7.0
+    "@docusaurus/core": ^3.8.1
+    "@docusaurus/preset-classic": ^3.8.1
     "@mdx-js/react": ^3.1.0
     clsx: ^2.1.1
     prism-react-renderer: ^2.4.1
-    "@docusaurus/module-type-aliases": ^3.7.0
-    "@docusaurus/tsconfig": ^3.7.0
-    "@docusaurus/types": ^3.7.0
+    "@docusaurus/module-type-aliases": ^3.8.1
+    "@docusaurus/tsconfig": ^3.8.1
+    "@docusaurus/types": ^3.8.1

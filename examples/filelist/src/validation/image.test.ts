@@ -4,7 +4,7 @@ import { LocalFileListBuilder } from '@mock-filelist/filelist';
 
 describe('Validation Test of imageSchema', () => {
   test.concurrent('Vaild Value', async () => {
-    let filelist: FileList = new LocalFileListBuilder()
+    const filelist: FileList = new LocalFileListBuilder()
       .addFile({ filePath: 'test_assets/sample.png', name: 'sample.png', mimeType: 'image/png' })
       .build();
     const validInput: ImageSchemaType = {

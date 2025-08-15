@@ -8,7 +8,7 @@ server.listen();
 
 describe('Validation Test of imageSchema', () => {
   test.concurrent('Vaild Value', async () => {
-    let builder = new RemoteFileListBuilder();
+    const builder = new RemoteFileListBuilder();
     const filelist = await builder
       .addFile({
         name: 'sample.png',
