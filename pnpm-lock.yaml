@@ -45,9 +45,6 @@ catalogs:
     '@hookform/error-message':
       specifier: ^2.0.1
       version: 2.0.1
-    '@hookform/resolvers':
-      specifier: ^5.2.1
-      version: 5.2.1
     '@types/react':
       specifier: ^19.1.10
       version: 19.1.10
@@ -128,7 +125,7 @@ importers:
         version: 2.0.1(react-dom@19.1.1(react@19.1.1))(react-hook-form@7.62.0(react@19.1.1))(react@19.1.1)
       '@hookform/resolvers':
         specifier: ^5.2.1
-        version: 5.2.1(react-hook-form@7.62.0(react@19.1.1))
+        version: 5.2.2(react-hook-form@7.62.0(react@19.1.1))
       '@mdx-js/react':
         specifier: ^3.1.0
         version: 3.1.0(@types/react@19.1.10)(react@19.1.1)
@@ -230,7 +227,7 @@ importers:
         version: 2.0.1(react-dom@19.1.1(react@19.1.1))(react-hook-form@7.62.0(react@19.1.1))(react@19.1.1)
       '@hookform/resolvers':
         specifier: catalog:examples
-        version: 5.2.1(react-hook-form@7.62.0(react@19.1.1))
+        version: 5.2.2(react-hook-form@7.62.0(react@19.1.1))
       '@types/node':
         specifier: catalog:commonjs
         version: 22.17.1
@@ -315,7 +312,7 @@ importers:
         version: 2.0.1(react-dom@19.1.1(react@19.1.1))(react-hook-form@7.62.0(react@19.1.1))(react@19.1.1)
       '@hookform/resolvers':
         specifier: catalog:examples
-        version: 5.2.1(react-hook-form@7.62.0(react@19.1.1))
+        version: 5.2.2(react-hook-form@7.62.0(react@19.1.1))
       '@types/node':
         specifier: catalog:commonjs
         version: 22.17.1
@@ -1139,6 +1136,10 @@ packages:
 
   '@babel/runtime@7.28.3':
     resolution: {integrity: sha512-9uIQ10o0WGdpP6GDhXcdOJPJuDgFtIDtN/9+ArJQ2NAfAmiuhTQdzkaTGR33v43GYS2UrSA0eX2pPPHoFVvpxA==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/runtime@7.28.4':
+    resolution: {integrity: sha512-Q/N6JNWvIvPnLDvjlE1OUBLPQHH6l3CltCEsHIujp45zQUSSh8K+gHnaEX45yAT1nyngnINhvWtzN+Nb9D8RAQ==}
     engines: {node: '>=6.9.0'}
 
   '@babel/template@7.27.2':
@@ -1991,8 +1992,8 @@ packages:
       react-dom: '>=16.8.0'
       react-hook-form: ^7.0.0
 
-  '@hookform/resolvers@5.2.1':
-    resolution: {integrity: sha512-u0+6X58gkjMcxur1wRWokA7XsiiBJ6aK17aPZxhkoYiK5J+HcTx0Vhu9ovXe6H+dVpO6cjrn2FkJTryXEMlryQ==}
+  '@hookform/resolvers@5.2.2':
+    resolution: {integrity: sha512-A/IxlMLShx3KjV/HeTcTfaMxdwy690+L/ZADoeaTltLx+CVuzkeVIPuybK3jrRfw7YZnmdKsVVHAlEPIAEUNlA==}
     peerDependencies:
       react-hook-form: ^7.55.0
 
@@ -7756,6 +7757,8 @@ snapshots:
 
   '@babel/runtime@7.28.3': {}
 
+  '@babel/runtime@7.28.4': {}
+
   '@babel/template@7.27.2':
     dependencies:
       '@babel/code-frame': 7.27.1
@@ -9075,7 +9078,7 @@ snapshots:
       react-dom: 19.1.1(react@19.1.1)
       react-hook-form: 7.62.0(react@19.1.1)
 
-  '@hookform/resolvers@5.2.1(react-hook-form@7.62.0(react@19.1.1))':
+  '@hookform/resolvers@5.2.2(react-hook-form@7.62.0(react@19.1.1))':
     dependencies:
       '@standard-schema/utils': 0.3.0
       react-hook-form: 7.62.0(react@19.1.1)
@@ -9405,7 +9408,7 @@ snapshots:
 
   '@slorber/react-helmet-async@1.3.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
     dependencies:
-      '@babel/runtime': 7.28.3
+      '@babel/runtime': 7.28.4
       invariant: 2.2.4
       prop-types: 15.8.1
       react: 19.1.1
