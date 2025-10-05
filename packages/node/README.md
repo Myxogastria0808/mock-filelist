@@ -6,6 +6,7 @@
 ![GitHub Release](https://img.shields.io/github/v/release/Myxogastria0808/mock-filelist)
 ![NPM Type Definitions](https://img.shields.io/npm/types/@mock-filelist/node)
 [![Download NPM](https://img.shields.io/npm/dm/@mock-filelist/node.svg?style=flat)](https://www.npmjs.com/package/@mock-filelist/node)
+[![NPM Downloads All Time](https://badgen.net/npm/dt/@mock-filelist/node?label=downloads%20all%20time&color=cyan)](https://www.npmjs.com/package/@mock-filelist/node)
 ![GitHub License](https://img.shields.io/github/license/Myxogastria0808/mock-filelist)
 ![Vitest](https://img.shields.io/badge/-vitest-6e9f18?style=flat&logo=vitest&logoColor=ffffff)
 ![Typedoc](https://img.shields.io/badge/docs-typedoc-blue?style=flat-square&logo=typescript&logoColor=white)
