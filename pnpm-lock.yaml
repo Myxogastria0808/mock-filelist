@@ -63,9 +63,6 @@ catalogs:
     eslint-plugin-react-hooks:
       specifier: ^5.2.0
       version: 5.2.0
-    eslint-plugin-react-refresh:
-      specifier: ^0.4.20
-      version: 0.4.23
     filepond:
       specifier: ^4.32.8
       version: 4.32.9
