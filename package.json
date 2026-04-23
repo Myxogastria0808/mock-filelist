@@ -94,7 +94,7 @@
     "clsx": "^2.1.1",
     "eslint": "^9.33.0",
     "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
+    "eslint-plugin-react-refresh": "^0.5.0",
     "filepond": "^4.32.8",
     "filepond-plugin-image-exif-orientation": "^1.0.11",
     "filepond-plugin-image-preview": "^4.6.12",
