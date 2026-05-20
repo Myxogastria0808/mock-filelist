@@ -81,9 +81,6 @@ catalogs:
     react-filepond:
       specifier: ^7.1.3
       version: 7.1.3
-    react-hook-form:
-      specifier: ^7.62.0
-      version: 7.68.0
     styled-components:
       specifier: ^6.1.19
       version: 6.1.19
@@ -125,10 +122,10 @@ importers:
         version: 9.33.0
       '@hookform/error-message':
         specifier: ^2.0.1
-        version: 2.0.1(react-dom@19.1.1(react@19.1.1))(react-hook-form@7.68.0(react@19.1.1))(react@19.1.1)
+        version: 2.0.1(react-dom@19.1.1(react@19.1.1))(react-hook-form@7.76.0(react@19.1.1))(react@19.1.1)
       '@hookform/resolvers':
         specifier: ^5.2.1
-        version: 5.2.2(react-hook-form@7.68.0(react@19.1.1))
+        version: 5.2.2(react-hook-form@7.76.0(react@19.1.1))
       '@mdx-js/react':
         specifier: ^3.1.0
         version: 3.1.1(@types/react@19.1.10)(react@19.1.1)
@@ -194,7 +191,7 @@ importers:
         version: 7.1.3(filepond@4.32.12)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       react-hook-form:
         specifier: ^7.62.0
-        version: 7.68.0(react@19.1.1)
+        version: 7.76.0(react@19.1.1)
       styled-components:
         specifier: ^6.1.19
         version: 6.1.19(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
@@ -227,10 +224,10 @@ importers:
     dependencies:
       '@hookform/error-message':
         specifier: catalog:examples
-        version: 2.0.1(react-dom@19.1.1(react@19.1.1))(react-hook-form@7.68.0(react@19.1.1))(react@19.1.1)
+        version: 2.0.1(react-dom@19.1.1(react@19.1.1))(react-hook-form@7.76.0(react@19.1.1))(react@19.1.1)
       '@hookform/resolvers':
         specifier: catalog:examples
-        version: 5.2.2(react-hook-form@7.68.0(react@19.1.1))
+        version: 5.2.2(react-hook-form@7.76.0(react@19.1.1))
       '@types/node':
         specifier: catalog:commonjs
         version: 22.17.1
@@ -254,7 +251,7 @@ importers:
         version: 7.1.3(filepond@4.32.12)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       react-hook-form:
         specifier: catalog:examples
-        version: 7.68.0(react@19.1.1)
+        version: 7.76.0(react@19.1.1)
       styled-components:
         specifier: catalog:examples
         version: 6.1.19(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
@@ -312,10 +309,10 @@ importers:
     dependencies:
       '@hookform/error-message':
         specifier: catalog:examples
-        version: 2.0.1(react-dom@19.1.1(react@19.1.1))(react-hook-form@7.68.0(react@19.1.1))(react@19.1.1)
+        version: 2.0.1(react-dom@19.1.1(react@19.1.1))(react-hook-form@7.76.0(react@19.1.1))(react@19.1.1)
       '@hookform/resolvers':
         specifier: catalog:examples
-        version: 5.2.2(react-hook-form@7.68.0(react@19.1.1))
+        version: 5.2.2(react-hook-form@7.76.0(react@19.1.1))
       '@types/node':
         specifier: catalog:commonjs
         version: 22.17.1
@@ -339,7 +336,7 @@ importers:
         version: 7.1.3(filepond@4.32.12)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       react-hook-form:
         specifier: catalog:examples
-        version: 7.68.0(react@19.1.1)
+        version: 7.76.0(react@19.1.1)
       styled-components:
         specifier: catalog:examples
         version: 6.1.19(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
@@ -2808,6 +2805,7 @@ packages:
 
   '@ungap/structured-clone@1.3.0':
     resolution: {integrity: sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==}
+    deprecated: Potential CWE-502 - Update to 1.3.1 or higher
 
   '@vitejs/plugin-react-swc@3.11.0':
     resolution: {integrity: sha512-YTJCGFdNMHCMfjODYtxRNVAYmTWQ1Lb8PulP/2/f/oEEtglw8oKxKIZmmRkyXrVrHfsKOaVkAc3NT9/dMutO5w==}
@@ -5832,8 +5830,8 @@ packages:
       react: 16 - 19
       react-dom: 16 - 19
 
-  react-hook-form@7.68.0:
-    resolution: {integrity: sha512-oNN3fjrZ/Xo40SWlHf1yCjlMK417JxoSJVUXQjGdvdRCU07NTFei1i1f8ApUAts+IVh14e4EdakeLEA+BEAs/Q==}
+  react-hook-form@7.76.0:
+    resolution: {integrity: sha512-eKtLGgFeSgkHqQD8J59AMZ9a4uD1D83iSIzt4YlTGD7liDen5rrjcUO1rVIGd9yC1gofryjtHbv+4ny4hkLWlw==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18 || ^19
@@ -6688,6 +6686,7 @@ packages:
 
   uuid@8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   value-equal@1.0.1:
@@ -9122,16 +9121,16 @@ snapshots:
     dependencies:
       '@hapi/hoek': 9.3.0
 
-  '@hookform/error-message@2.0.1(react-dom@19.1.1(react@19.1.1))(react-hook-form@7.68.0(react@19.1.1))(react@19.1.1)':
+  '@hookform/error-message@2.0.1(react-dom@19.1.1(react@19.1.1))(react-hook-form@7.76.0(react@19.1.1))(react@19.1.1)':
     dependencies:
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
-      react-hook-form: 7.68.0(react@19.1.1)
+      react-hook-form: 7.76.0(react@19.1.1)
 
-  '@hookform/resolvers@5.2.2(react-hook-form@7.68.0(react@19.1.1))':
+  '@hookform/resolvers@5.2.2(react-hook-form@7.76.0(react@19.1.1))':
     dependencies:
       '@standard-schema/utils': 0.3.0
-      react-hook-form: 7.68.0(react@19.1.1)
+      react-hook-form: 7.76.0(react@19.1.1)
 
   '@humanfs/core@0.19.1': {}
 
@@ -13491,7 +13490,7 @@ snapshots:
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
 
-  react-hook-form@7.68.0(react@19.1.1):
+  react-hook-form@7.76.0(react@19.1.1):
     dependencies:
       react: 19.1.1
 
