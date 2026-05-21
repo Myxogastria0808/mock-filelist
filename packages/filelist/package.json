@@ -37,7 +37,7 @@
     "url": "git+https://github.com/Myxogastria0808/mock-filelist.git"
   },
   "engines": {
-    "node": "^20.17.0 || >=22.9.0"
+    "node": "^20.17.0 || >=22.13.0"
   },
   "keywords": [
     "mock",
