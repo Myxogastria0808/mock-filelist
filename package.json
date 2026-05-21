@@ -49,7 +49,7 @@
     "docs:typecheck": "pnpm -C docs tsc"
   },
   "engines": {
-    "node": ">=20.0.0",
+    "node": "^20.17.0 || >=22.9.0",
     "npm": "use pnpm please!",
     "yarn": "use pnpm please!",
     "pnpm": ">=9.0.0"
