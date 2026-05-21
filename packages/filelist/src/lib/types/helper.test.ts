@@ -1,10 +1,5 @@
 import { describe, expect, expectTypeOf, test } from 'vitest';
 import { buildFile, buildFileList, localFileSourceConverter, remoteFileSourceConverter } from './helper';
-import { server } from '../../../mock';
-
-// Call the `.listen` method to enable API mocking.
-server.listen();
-
 describe('helper function test', () => {
   test.concurrent('buildFile function test (input File object)', () => {
     const file: File = new File([''], 'sample.txt', { type: 'text/plain' });
