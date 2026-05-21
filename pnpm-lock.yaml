@@ -16,6 +16,9 @@ catalogs:
     '@vitest/ui':
       specifier: ^3.2.4
       version: 3.2.4
+    msw:
+      specifier: ^2.10.5
+      version: 2.10.5
     tsup:
       specifier: ^8.5.0
       version: 8.5.1
