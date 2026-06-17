@@ -5,6 +5,10 @@ settings:
   excludeLinksFromLockfile: false
 
 catalogs:
+  commonjs:
+    '@types/node':
+      specifier: ^25.9.1
+      version: 25.9.3
   default:
     '@vitest/coverage-v8':
       specifier: ^4.1.7
@@ -77,9 +81,6 @@ catalogs:
     react-filepond:
       specifier: ^7.1.3
       version: 7.1.3
-    react-hook-form:
-      specifier: ^7.76.0
-      version: 7.78.0
     styled-components:
       specifier: ^6.4.2
       version: 6.4.2
@@ -121,10 +122,10 @@ importers:
         version: 10.0.1(eslint@10.4.1(jiti@1.21.7))
       '@hookform/error-message':
         specifier: ^2.0.1
-        version: 2.0.1(react-dom@19.2.7(react@19.2.7))(react-hook-form@7.78.0(react@19.2.7))(react@19.2.7)
+        version: 2.0.1(react-dom@19.2.7(react@19.2.7))(react-hook-form@7.79.0(react@19.2.7))(react@19.2.7)
       '@hookform/resolvers':
         specifier: ^5.2.2
-        version: 5.4.0(react-hook-form@7.78.0(react@19.2.7))
+        version: 5.4.0(react-hook-form@7.79.0(react@19.2.7))
       '@mdx-js/react':
         specifier: ^3.1.1
         version: 3.1.1(@types/react@19.2.17)(react@19.2.7)
@@ -190,7 +191,7 @@ importers:
         version: 7.1.3(filepond@4.32.12)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       react-hook-form:
         specifier: ^7.76.0
-        version: 7.78.0(react@19.2.7)
+        version: 7.79.0(react@19.2.7)
       styled-components:
         specifier: ^6.4.2
         version: 6.4.2(css-to-react-native@3.2.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -223,10 +224,10 @@ importers:
     dependencies:
       '@hookform/error-message':
         specifier: catalog:examples
-        version: 2.0.1(react-dom@19.2.7(react@19.2.7))(react-hook-form@7.78.0(react@19.2.7))(react@19.2.7)
+        version: 2.0.1(react-dom@19.2.7(react@19.2.7))(react-hook-form@7.79.0(react@19.2.7))(react@19.2.7)
       '@hookform/resolvers':
         specifier: catalog:examples
-        version: 5.4.0(react-hook-form@7.78.0(react@19.2.7))
+        version: 5.4.0(react-hook-form@7.79.0(react@19.2.7))
       '@types/node':
         specifier: catalog:commonjs
         version: 25.9.3
@@ -250,7 +251,7 @@ importers:
         version: 7.1.3(filepond@4.32.12)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       react-hook-form:
         specifier: catalog:examples
-        version: 7.78.0(react@19.2.7)
+        version: 7.79.0(react@19.2.7)
       styled-components:
         specifier: catalog:examples
         version: 6.4.2(css-to-react-native@3.2.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -308,10 +309,10 @@ importers:
     dependencies:
       '@hookform/error-message':
         specifier: catalog:examples
-        version: 2.0.1(react-dom@19.2.7(react@19.2.7))(react-hook-form@7.78.0(react@19.2.7))(react@19.2.7)
+        version: 2.0.1(react-dom@19.2.7(react@19.2.7))(react-hook-form@7.79.0(react@19.2.7))(react@19.2.7)
       '@hookform/resolvers':
         specifier: catalog:examples
-        version: 5.4.0(react-hook-form@7.78.0(react@19.2.7))
+        version: 5.4.0(react-hook-form@7.79.0(react@19.2.7))
       '@types/node':
         specifier: catalog:commonjs
         version: 25.9.3
@@ -335,7 +336,7 @@ importers:
         version: 7.1.3(filepond@4.32.12)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       react-hook-form:
         specifier: catalog:examples
-        version: 7.78.0(react@19.2.7)
+        version: 7.79.0(react@19.2.7)
       styled-components:
         specifier: catalog:examples
         version: 6.4.2(css-to-react-native@3.2.0)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -5942,8 +5943,8 @@ packages:
       react: 16 - 19
       react-dom: 16 - 19
 
-  react-hook-form@7.78.0:
-    resolution: {integrity: sha512-EEZqc+N23moyzTlz61Pj+JvcXo76ICkpfOZo8JZw+sM4+wLQGh6nI2Ms+PdMOYNluFu0ghlM7B8mCzhRYtJCnA==}
+  react-hook-form@7.79.0:
+    resolution: {integrity: sha512-mhYp/MTmXvzYX6AJcJVko0rktoIhhmRnEouObj4wF5i/tCttgJvnp1+9wRkpITZjDTqpo4IOSJqu0dBlPlV/Lw==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18 || ^19
@@ -9380,16 +9381,16 @@ snapshots:
     dependencies:
       '@hapi/hoek': 9.3.0
 
-  '@hookform/error-message@2.0.1(react-dom@19.2.7(react@19.2.7))(react-hook-form@7.78.0(react@19.2.7))(react@19.2.7)':
+  '@hookform/error-message@2.0.1(react-dom@19.2.7(react@19.2.7))(react-hook-form@7.79.0(react@19.2.7))(react@19.2.7)':
     dependencies:
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
-      react-hook-form: 7.78.0(react@19.2.7)
+      react-hook-form: 7.79.0(react@19.2.7)
 
-  '@hookform/resolvers@5.4.0(react-hook-form@7.78.0(react@19.2.7))':
+  '@hookform/resolvers@5.4.0(react-hook-form@7.79.0(react@19.2.7))':
     dependencies:
       '@standard-schema/utils': 0.3.0
-      react-hook-form: 7.78.0(react@19.2.7)
+      react-hook-form: 7.79.0(react@19.2.7)
 
   '@humanfs/core@0.19.2':
     dependencies:
@@ -13961,7 +13962,7 @@ snapshots:
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
 
-  react-hook-form@7.78.0(react@19.2.7):
+  react-hook-form@7.79.0(react@19.2.7):
     dependencies:
       react: 19.2.7
 
