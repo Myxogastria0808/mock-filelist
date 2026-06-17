@@ -5,6 +5,10 @@ settings:
   excludeLinksFromLockfile: false
 
 catalogs:
+  commonjs:
+    '@types/node':
+      specifier: ^25.9.1
+      version: 25.9.3
   default:
     '@vitest/coverage-v8':
       specifier: ^4.1.7
@@ -59,9 +63,6 @@ catalogs:
     eslint-plugin-react-hooks:
       specifier: ^7.1.1
       version: 7.1.1
-    eslint-plugin-react-refresh:
-      specifier: ^0.5.2
-      version: 0.5.2
     filepond:
       specifier: ^4.32.12
       version: 4.32.12
@@ -157,7 +158,7 @@ importers:
         version: 7.1.1(eslint@10.4.1(jiti@1.21.7))
       eslint-plugin-react-refresh:
         specifier: ^0.5.2
-        version: 0.5.2(eslint@10.4.1(jiti@1.21.7))
+        version: 0.5.3(eslint@10.4.1(jiti@1.21.7))
       filepond:
         specifier: ^4.32.12
         version: 4.32.12
@@ -281,7 +282,7 @@ importers:
         version: 7.1.1(eslint@10.4.1(jiti@1.21.7))
       eslint-plugin-react-refresh:
         specifier: catalog:examples
-        version: 0.5.2(eslint@10.4.1(jiti@1.21.7))
+        version: 0.5.3(eslint@10.4.1(jiti@1.21.7))
       globals:
         specifier: catalog:examples
         version: 17.6.0
@@ -366,7 +367,7 @@ importers:
         version: 7.1.1(eslint@10.4.1(jiti@1.21.7))
       eslint-plugin-react-refresh:
         specifier: catalog:examples
-        version: 0.5.2(eslint@10.4.1(jiti@1.21.7))
+        version: 0.5.3(eslint@10.4.1(jiti@1.21.7))
       globals:
         specifier: catalog:examples
         version: 17.6.0
@@ -3907,8 +3908,8 @@ packages:
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0 || ^10.0.0
 
-  eslint-plugin-react-refresh@0.5.2:
-    resolution: {integrity: sha512-hmgTH57GfzoTFjVN0yBwTggnsVUF2tcqi7RJZHqi9lIezSs4eFyAMktA68YD4r5kNw1mxyY4dmkyoFDb3FIqrA==}
+  eslint-plugin-react-refresh@0.5.3:
+    resolution: {integrity: sha512-5EMmLCV98Pi4o/f/3DP/v/tNqLHMIc9I8LKClNDWhZ9JTho89/kQcitCXQBMG7sAfVRK0Ie3T2EDOzp1YXYiVA==}
     peerDependencies:
       eslint: ^9 || ^10
 
@@ -11513,7 +11514,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-react-refresh@0.5.2(eslint@10.4.1(jiti@1.21.7)):
+  eslint-plugin-react-refresh@0.5.3(eslint@10.4.1(jiti@1.21.7)):
     dependencies:
       eslint: 10.4.1(jiti@1.21.7)
 
