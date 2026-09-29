@@ -75,9 +75,6 @@ catalogs:
     filepond-plugin-image-preview:
       specifier: ^4.6.12
       version: 4.6.12
-    globals:
-      specifier: ^17.6.0
-      version: 17.6.0
     react-filepond:
       specifier: ^7.1.3
       version: 7.1.3
@@ -93,6 +90,13 @@ catalogs:
     vite:
       specifier: ^8.0.14
       version: 8.0.16
+  react:
+    react:
+      specifier: ^19.2.6
+      version: 19.2.8
+    react-dom:
+      specifier: ^19.2.6
+      version: 19.2.8
 
 importers:
 
@@ -121,7 +125,7 @@ importers:
         version: 2.0.1(react-dom@19.2.8(react@19.2.8))(react-hook-form@7.79.0(react@19.2.8))(react@19.2.8)
       '@hookform/resolvers':
         specifier: ^5.2.2
-        version: 5.5.7(@sinclair/typebox@0.27.12)(@standard-schema/spec@1.1.0)(ajv-formats@2.1.1(ajv@8.20.0))(ajv@8.20.0)(joi@17.13.4)(react-hook-form@7.79.0(react@19.2.8))(zod@4.4.3)
+        version: 5.5.7(@sinclair/typebox@0.27.12)(@standard-schema/spec@1.1.0)(ajv-formats@2.1.1(ajv@6.15.0))(ajv@6.15.0)(joi@17.13.4)(react-hook-form@7.79.0(react@19.2.8))(zod@4.4.3)
       '@mdx-js/react':
         specifier: ^3.1.1
         version: 3.1.1(@types/react@19.2.17)(react@19.2.8)
@@ -166,7 +170,7 @@ importers:
         version: 4.6.12(filepond@4.32.12)
       globals:
         specifier: ^17.6.0
-        version: 17.6.0
+        version: 17.12.0
       happy-dom:
         specifier: ^20.9.0
         version: 20.9.0
@@ -281,7 +285,7 @@ importers:
         version: 0.5.3(eslint@10.4.1(jiti@1.21.7))
       globals:
         specifier: catalog:examples
-        version: 17.6.0
+        version: 17.12.0
       happy-dom:
         specifier: catalog:esmodules
         version: 20.9.0
@@ -366,7 +370,7 @@ importers:
         version: 0.5.3(eslint@10.4.1(jiti@1.21.7))
       globals:
         specifier: catalog:examples
-        version: 17.6.0
+        version: 17.12.0
       happy-dom:
         specifier: catalog:esmodules
         version: 20.9.0
@@ -4368,8 +4372,8 @@ packages:
     resolution: {integrity: sha512-NBcGGFbBA9s1VzD41QXDG+3++t9Mn5t1FpLdhESY6oKY4gYTFpX4wO3sqGUa0Srjtbfj3szX0RnemmrVRUdULA==}
     engines: {node: '>=10'}
 
-  globals@17.6.0:
-    resolution: {integrity: sha512-sepffkT8stwnIYbsMBpoCHJuJM5l98FUF2AnE07hfvE0m/qp3R586hw4jF4uadbhvg1ooIdzuu7CsfD2jzCaNA==}
+  globals@17.12.0:
+    resolution: {integrity: sha512-cezEd/DTyyht9cvSSURyygXPfy04GtWO/5e6ZPvH7fCtjKz9PYOmuawphw1Ctd1f6C+5JypXfGD7ahNMXvevBA==}
     engines: {node: '>=18'}
 
   globby@11.1.0:
@@ -9696,6 +9700,18 @@ snapshots:
       react-dom: 19.2.8(react@19.2.8)
       react-hook-form: 7.79.0(react@19.2.8)
 
+  '@hookform/resolvers@5.5.7(@sinclair/typebox@0.27.12)(@standard-schema/spec@1.1.0)(ajv-formats@2.1.1(ajv@6.15.0))(ajv@6.15.0)(joi@17.13.4)(react-hook-form@7.79.0(react@19.2.8))(zod@4.4.3)':
+    dependencies:
+      '@standard-schema/utils': 0.3.0
+      react-hook-form: 7.79.0(react@19.2.8)
+    optionalDependencies:
+      '@sinclair/typebox': 0.27.12
+      '@standard-schema/spec': 1.1.0
+      ajv: 6.15.0
+      ajv-formats: 2.1.1(ajv@6.15.0)
+      joi: 17.13.4
+      zod: 4.4.3
+
   '@hookform/resolvers@5.5.7(@sinclair/typebox@0.27.12)(@standard-schema/spec@1.1.0)(ajv-formats@2.1.1(ajv@8.20.0))(ajv@8.20.0)(joi@17.13.4)(react-hook-form@7.79.0(react@19.2.8))(zod@4.4.3)':
     dependencies:
       '@standard-schema/utils': 0.3.0
@@ -10921,6 +10937,11 @@ snapshots:
     dependencies:
       clean-stack: 2.2.0
       indent-string: 4.0.0
+
+  ajv-formats@2.1.1(ajv@6.15.0):
+    optionalDependencies:
+      ajv: 6.15.0
+    optional: true
 
   ajv-formats@2.1.1(ajv@8.20.0):
     optionalDependencies:
@@ -12206,7 +12227,7 @@ snapshots:
     dependencies:
       ini: 2.0.0
 
-  globals@17.6.0: {}
+  globals@17.12.0: {}
 
   globby@11.1.0:
     dependencies:
