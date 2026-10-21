@@ -16,6 +16,9 @@ catalogs:
     '@vitest/ui':
       specifier: ^4.1.7
       version: 4.1.7
+    msw:
+      specifier: ^2.14.6
+      version: 2.15.0
     tsup:
       specifier: ^8.5.1
       version: 8.5.1
@@ -28,9 +31,6 @@ catalogs:
     vitest:
       specifier: ^4.1.7
       version: 4.1.7
-    zod:
-      specifier: ^4.4.3
-      version: 4.4.3
   esmodules:
     happy-dom:
       specifier: ^20.9.0
@@ -54,6 +54,9 @@ catalogs:
     '@vitejs/plugin-react-swc':
       specifier: ^4.3.1
       version: 4.3.3
+    eslint:
+      specifier: ^10.4.0
+      version: 10.13.0
     eslint-plugin-react-hooks:
       specifier: ^7.1.1
       version: 7.1.1
@@ -75,6 +78,9 @@ catalogs:
     react-filepond:
       specifier: ^7.1.3
       version: 7.1.3
+    react-hook-form:
+      specifier: ^7.76.0
+      version: 7.90.0
     styled-components:
       specifier: ^6.4.2
       version: 6.6.0
@@ -119,7 +125,7 @@ importers:
         version: 2.0.1(react-dom@19.3.1(react@19.3.1))(react-hook-form@7.90.0(@types/react@19.3.0)(react@19.3.1))(react@19.3.1)
       '@hookform/resolvers':
         specifier: ^5.2.2
-        version: 5.9.2(@sinclair/typebox@0.27.12)(@standard-schema/spec@1.1.0)(ajv-formats@2.1.1(ajv@6.15.0))(ajv@6.15.0)(joi@17.13.4)(react-hook-form@7.90.0(@types/react@19.3.0)(react@19.3.1))(zod@4.4.3)
+        version: 5.9.2(@sinclair/typebox@0.27.12)(@standard-schema/spec@1.1.0)(ajv-formats@2.1.1(ajv@6.15.0))(ajv@6.15.0)(joi@17.13.4)(react-hook-form@7.90.0(@types/react@19.3.0)(react@19.3.1))(zod@4.6.7)
       '@mdx-js/react':
         specifier: ^3.1.1
         version: 3.1.1(@types/react@19.3.0)(react@19.3.1)
@@ -212,7 +218,7 @@ importers:
         version: 4.1.7(@types/node@25.9.9)(@vitest/coverage-v8@4.1.7)(@vitest/ui@4.1.7)(happy-dom@20.9.0)(msw@2.15.0(@types/node@25.9.9)(typescript@6.0.3))(vite@8.3.4(@types/node@25.9.9)(esbuild@0.27.7)(jiti@1.21.7)(terser@5.49.0)(yaml@2.9.0))
       zod:
         specifier: ^4.4.3
-        version: 4.4.3
+        version: 4.6.7
 
   examples/browser:
     dependencies:
@@ -221,7 +227,7 @@ importers:
         version: 2.0.1(react-dom@19.3.1(react@19.3.1))(react-hook-form@7.90.0(@types/react@19.3.0)(react@19.3.1))(react@19.3.1)
       '@hookform/resolvers':
         specifier: catalog:examples
-        version: 5.9.2(@sinclair/typebox@0.27.12)(@standard-schema/spec@1.1.0)(ajv-formats@2.1.1(ajv@8.20.0))(ajv@8.20.0)(joi@17.13.4)(react-hook-form@7.90.0(@types/react@19.3.0)(react@19.3.1))(zod@4.4.3)
+        version: 5.9.2(@sinclair/typebox@0.27.12)(@standard-schema/spec@1.1.0)(ajv-formats@2.1.1(ajv@8.20.0))(ajv@8.20.0)(joi@17.13.4)(react-hook-form@7.90.0(@types/react@19.3.0)(react@19.3.1))(zod@4.6.7)
       '@types/node':
         specifier: catalog:commonjs
         version: 25.9.9
@@ -251,7 +257,7 @@ importers:
         version: 6.6.0(css-to-react-native@3.2.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       zod:
         specifier: 'catalog:'
-        version: 4.4.3
+        version: 4.6.7
     devDependencies:
       '@eslint/js':
         specifier: catalog:examples
@@ -306,7 +312,7 @@ importers:
         version: 2.0.1(react-dom@19.3.1(react@19.3.1))(react-hook-form@7.90.0(@types/react@19.3.0)(react@19.3.1))(react@19.3.1)
       '@hookform/resolvers':
         specifier: catalog:examples
-        version: 5.9.2(@sinclair/typebox@0.27.12)(@standard-schema/spec@1.1.0)(ajv-formats@2.1.1(ajv@8.20.0))(ajv@8.20.0)(joi@17.13.4)(react-hook-form@7.90.0(@types/react@19.3.0)(react@19.3.1))(zod@4.4.3)
+        version: 5.9.2(@sinclair/typebox@0.27.12)(@standard-schema/spec@1.1.0)(ajv-formats@2.1.1(ajv@8.20.0))(ajv@8.20.0)(joi@17.13.4)(react-hook-form@7.90.0(@types/react@19.3.0)(react@19.3.1))(zod@4.6.7)
       '@types/node':
         specifier: catalog:commonjs
         version: 25.9.9
@@ -336,7 +342,7 @@ importers:
         version: 6.6.0(css-to-react-native@3.2.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       zod:
         specifier: 'catalog:'
-        version: 4.4.3
+        version: 4.6.7
     devDependencies:
       '@eslint/js':
         specifier: catalog:examples
@@ -428,7 +434,7 @@ importers:
         version: 4.1.7(@types/node@25.9.9)(@vitest/coverage-v8@4.1.7)(@vitest/ui@4.1.7)(happy-dom@20.9.0)(msw@2.15.0(@types/node@25.9.9)(typescript@6.0.3))(vite@8.3.4(@types/node@25.9.9)(esbuild@0.27.7)(jiti@1.21.7)(terser@5.49.0)(yaml@2.9.0))
       zod:
         specifier: 'catalog:'
-        version: 4.4.3
+        version: 4.6.7
 
   packages/filelist:
     dependencies:
@@ -459,7 +465,7 @@ importers:
         version: 4.1.7(@types/node@25.9.9)(@vitest/coverage-v8@4.1.7)(@vitest/ui@4.1.7)(happy-dom@20.9.0)(msw@2.15.0(@types/node@25.9.9)(typescript@6.0.3))(vite@8.3.4(@types/node@25.9.9)(esbuild@0.27.7)(jiti@1.21.7)(terser@5.49.0)(yaml@2.9.0))
       zod:
         specifier: 'catalog:'
-        version: 4.4.3
+        version: 4.6.7
 
   packages/node:
     dependencies:
@@ -487,7 +493,7 @@ importers:
         version: 4.1.7(@types/node@25.9.9)(@vitest/coverage-v8@4.1.7)(@vitest/ui@4.1.7)(happy-dom@20.9.0)(msw@2.15.0(@types/node@25.9.9)(typescript@6.0.3))(vite@8.3.4(@types/node@25.9.9)(esbuild@0.27.7)(jiti@1.21.7)(terser@5.49.0)(yaml@2.9.0))
       zod:
         specifier: 'catalog:'
-        version: 4.4.3
+        version: 4.6.7
 
 packages:
 
@@ -7337,8 +7343,8 @@ packages:
     peerDependencies:
       zod: ^3.25.0 || ^4.0.0
 
-  zod@4.4.3:
-    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
+  zod@4.6.7:
+    resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -9738,7 +9744,7 @@ snapshots:
       react-dom: 19.3.1(react@19.3.1)
       react-hook-form: 7.90.0(@types/react@19.3.0)(react@19.3.1)
 
-  '@hookform/resolvers@5.9.2(@sinclair/typebox@0.27.12)(@standard-schema/spec@1.1.0)(ajv-formats@2.1.1(ajv@6.15.0))(ajv@6.15.0)(joi@17.13.4)(react-hook-form@7.90.0(@types/react@19.3.0)(react@19.3.1))(zod@4.4.3)':
+  '@hookform/resolvers@5.9.2(@sinclair/typebox@0.27.12)(@standard-schema/spec@1.1.0)(ajv-formats@2.1.1(ajv@6.15.0))(ajv@6.15.0)(joi@17.13.4)(react-hook-form@7.90.0(@types/react@19.3.0)(react@19.3.1))(zod@4.6.7)':
     dependencies:
       '@standard-schema/utils': 0.3.0
       react-hook-form: 7.90.0(@types/react@19.3.0)(react@19.3.1)
@@ -9748,9 +9754,9 @@ snapshots:
       ajv: 6.15.0
       ajv-formats: 2.1.1(ajv@6.15.0)
       joi: 17.13.4
-      zod: 4.4.3
+      zod: 4.6.7
 
-  '@hookform/resolvers@5.9.2(@sinclair/typebox@0.27.12)(@standard-schema/spec@1.1.0)(ajv-formats@2.1.1(ajv@8.20.0))(ajv@8.20.0)(joi@17.13.4)(react-hook-form@7.90.0(@types/react@19.3.0)(react@19.3.1))(zod@4.4.3)':
+  '@hookform/resolvers@5.9.2(@sinclair/typebox@0.27.12)(@standard-schema/spec@1.1.0)(ajv-formats@2.1.1(ajv@8.20.0))(ajv@8.20.0)(joi@17.13.4)(react-hook-form@7.90.0(@types/react@19.3.0)(react@19.3.1))(zod@4.6.7)':
     dependencies:
       '@standard-schema/utils': 0.3.0
       react-hook-form: 7.90.0(@types/react@19.3.0)(react@19.3.1)
@@ -9760,7 +9766,7 @@ snapshots:
       ajv: 8.20.0
       ajv-formats: 2.1.1(ajv@8.20.0)
       joi: 17.13.4
-      zod: 4.4.3
+      zod: 4.6.7
 
   '@humanfs/core@0.19.2':
     dependencies:
@@ -11902,8 +11908,8 @@ snapshots:
       '@babel/parser': 7.29.3
       eslint: 10.13.0(jiti@1.21.7)
       hermes-parser: 0.25.1
-      zod: 4.4.3
-      zod-validation-error: 4.0.2(zod@4.4.3)
+      zod: 4.6.7
+      zod-validation-error: 4.0.2(zod@4.6.7)
     transitivePeerDependencies:
       - supports-color
 
@@ -15705,10 +15711,10 @@ snapshots:
 
   yocto-queue@1.2.2: {}
 
-  zod-validation-error@4.0.2(zod@4.4.3):
+  zod-validation-error@4.0.2(zod@4.6.7):
     dependencies:
-      zod: 4.4.3
+      zod: 4.6.7
 
-  zod@4.4.3: {}
+  zod@4.6.7: {}
 
   zwitch@2.0.4: {}
