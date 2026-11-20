@@ -66,15 +66,15 @@ catalogs:
     eslint-plugin-react-refresh:
       specifier: ^0.5.2
       version: 0.5.7
-    filepond:
-      specifier: ^4.32.12
-      version: 4.32.12
     filepond-plugin-image-exif-orientation:
       specifier: ^1.0.11
       version: 1.0.11
     filepond-plugin-image-preview:
       specifier: ^4.6.12
       version: 4.6.12
+    globals:
+      specifier: ^17.6.0
+      version: 17.14.0
     react-filepond:
       specifier: ^7.1.3
       version: 7.1.3
@@ -161,13 +161,13 @@ importers:
         version: 0.5.7(eslint@10.14.0(jiti@1.21.7))
       filepond:
         specifier: ^4.32.12
-        version: 4.32.12
+        version: 4.32.14
       filepond-plugin-image-exif-orientation:
         specifier: ^1.0.11
-        version: 1.0.11(filepond@4.32.12)
+        version: 1.0.11(filepond@4.32.14)
       filepond-plugin-image-preview:
         specifier: ^4.6.12
-        version: 4.6.12(filepond@4.32.12)
+        version: 4.6.12(filepond@4.32.14)
       globals:
         specifier: ^17.6.0
         version: 17.14.0
@@ -188,7 +188,7 @@ importers:
         version: 19.3.1(react@19.3.1)
       react-filepond:
         specifier: ^7.1.3
-        version: 7.1.3(filepond@4.32.12)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+        version: 7.1.3(filepond@4.32.14)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       react-hook-form:
         specifier: ^7.76.0
         version: 7.92.0(@types/react@19.3.0)(react@19.3.1)
@@ -233,13 +233,13 @@ importers:
         version: 25.9.9
       filepond:
         specifier: catalog:examples
-        version: 4.32.12
+        version: 4.32.14
       filepond-plugin-image-exif-orientation:
         specifier: catalog:examples
-        version: 1.0.11(filepond@4.32.12)
+        version: 1.0.11(filepond@4.32.14)
       filepond-plugin-image-preview:
         specifier: catalog:examples
-        version: 4.6.12(filepond@4.32.12)
+        version: 4.6.12(filepond@4.32.14)
       react:
         specifier: catalog:react
         version: 19.3.1
@@ -248,7 +248,7 @@ importers:
         version: 19.3.1(react@19.3.1)
       react-filepond:
         specifier: catalog:examples
-        version: 7.1.3(filepond@4.32.12)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+        version: 7.1.3(filepond@4.32.14)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       react-hook-form:
         specifier: catalog:examples
         version: 7.92.0(@types/react@19.3.0)(react@19.3.1)
@@ -318,13 +318,13 @@ importers:
         version: 25.9.9
       filepond:
         specifier: catalog:examples
-        version: 4.32.12
+        version: 4.32.14
       filepond-plugin-image-exif-orientation:
         specifier: catalog:examples
-        version: 1.0.11(filepond@4.32.12)
+        version: 1.0.11(filepond@4.32.14)
       filepond-plugin-image-preview:
         specifier: catalog:examples
-        version: 4.6.12(filepond@4.32.12)
+        version: 4.6.12(filepond@4.32.14)
       react:
         specifier: catalog:react
         version: 19.3.1
@@ -333,7 +333,7 @@ importers:
         version: 19.3.1(react@19.3.1)
       react-filepond:
         specifier: catalog:examples
-        version: 7.1.3(filepond@4.32.12)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+        version: 7.1.3(filepond@4.32.14)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       react-hook-form:
         specifier: catalog:examples
         version: 7.92.0(@types/react@19.3.0)(react@19.3.1)
@@ -1201,6 +1201,10 @@ packages:
 
   '@babel/runtime@7.29.13':
     resolution: {integrity: sha512-v+oN26xP4YIlQsbQ/CbTH1WG5m/l/DjKKZNy/Kp3f/AFvbgt7Em/D0FeMM3O2hX0YzeN2M16W8lOpyhIkfCBcQ==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/runtime@7.29.15':
+    resolution: {integrity: sha512-304gsbbGVmQc+cNGHzwHBlqepYdWLKj3VXCQBGt/EGcV7PUPfKI7kAUNW1FZEOCwlQiLvQjg1JEaAlRQ616h+Q==}
     engines: {node: '>=6.9.0'}
 
   '@babel/runtime@7.29.7':
@@ -4289,8 +4293,8 @@ packages:
     peerDependencies:
       filepond: '>=4.x <5.x'
 
-  filepond@4.32.12:
-    resolution: {integrity: sha512-wro0/deLwua9CkL7HJygOlDaPo1c7Ov8kfzbZjH7m4hdi56gdHGDeRWnYa+qXnRm3Lty69gUGVFb3JZy/9vT8g==}
+  filepond@4.32.14:
+    resolution: {integrity: sha512-tR2HBxQoeXiDdrFkl2ID0xfCazx2RCJuuiySLjTroEqAp+NXsWO4Yzptvrbk1cygH+z0h6A80R+rbe8tsSaUYg==}
 
   fill-range@7.1.1:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
@@ -6194,8 +6198,8 @@ packages:
     peerDependencies:
       react: ^19.3.1
 
-  react-fast-compare@3.2.2:
-    resolution: {integrity: sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==}
+  react-fast-compare@3.2.3:
+    resolution: {integrity: sha512-WY9YHI1jjYC5a2lNRfHbeaNVQqiY+mMKWBSw1mPU0FgevlxI6V7izhNYz7Vp5ieFxetuRb6RmihPQxXEzg7oWQ==}
 
   react-filepond@7.1.3:
     resolution: {integrity: sha512-uQOCZt+YXnBfYn6OxK6vsgSoUROkBu/ZahcfIJnK94c1ZeSAS84L/XKDADq/8Adx/Lz88VtVWvUpTXnNpmjHFQ==}
@@ -8331,6 +8335,8 @@ snapshots:
 
   '@babel/runtime@7.29.13': {}
 
+  '@babel/runtime@7.29.15': {}
+
   '@babel/runtime@7.29.7': {}
 
   '@babel/template@7.28.6':
@@ -10385,12 +10391,12 @@ snapshots:
 
   '@slorber/react-helmet-async@1.3.0(react-dom@19.3.1(react@19.3.1))(react@19.3.1)':
     dependencies:
-      '@babel/runtime': 7.29.13
+      '@babel/runtime': 7.29.15
       invariant: 2.2.4
       prop-types: 15.8.1
       react: 19.3.1
       react-dom: 19.3.1(react@19.3.1)
-      react-fast-compare: 3.2.2
+      react-fast-compare: 3.2.3
       shallowequal: 1.1.0
 
   '@slorber/remark-comment@1.0.0':
@@ -12226,15 +12232,15 @@ snapshots:
       schema-utils: 3.3.0
       webpack: 5.109.1(@swc/core@1.16.18)(clean-css@5.3.3)(cssnano@6.1.2(postcss@8.5.24))(esbuild@0.27.7)(html-minifier-terser@7.2.0)(postcss@8.5.24)
 
-  filepond-plugin-image-exif-orientation@1.0.11(filepond@4.32.12):
+  filepond-plugin-image-exif-orientation@1.0.11(filepond@4.32.14):
     dependencies:
-      filepond: 4.32.12
+      filepond: 4.32.14
 
-  filepond-plugin-image-preview@4.6.12(filepond@4.32.12):
+  filepond-plugin-image-preview@4.6.12(filepond@4.32.14):
     dependencies:
-      filepond: 4.32.12
+      filepond: 4.32.14
 
-  filepond@4.32.12: {}
+  filepond@4.32.14: {}
 
   fill-range@7.1.1:
     dependencies:
@@ -14468,11 +14474,11 @@ snapshots:
       react: 19.3.1
       scheduler: 0.28.0
 
-  react-fast-compare@3.2.2: {}
+  react-fast-compare@3.2.3: {}
 
-  react-filepond@7.1.3(filepond@4.32.12)(react-dom@19.3.1(react@19.3.1))(react@19.3.1):
+  react-filepond@7.1.3(filepond@4.32.14)(react-dom@19.3.1(react@19.3.1))(react@19.3.1):
     dependencies:
-      filepond: 4.32.12
+      filepond: 4.32.14
       react: 19.3.1
       react-dom: 19.3.1(react@19.3.1)
 
